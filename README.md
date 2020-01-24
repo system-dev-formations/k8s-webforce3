@@ -48,13 +48,22 @@
    k replace -f hog.yaml
    k get po 
    k logs hog-xxxxxxxxxx
-   
-
-
-
-
-
-
-
-
-
+   k delete deployments.apps hog
+   k create -f hog.yaml
+   k get pod
+   k logs hog-7867569d4b-tng4s
+   kubectl scale deployment hog --replicas=10
+   ## Namespaces
+   kubectl create namespace low-usage-limit
+   k get namespace
+   k  --namespace=low-usage-limit create -f low-resource-range.yaml
+   k get LimitRange
+   k get LimitRange -A
+   k -n low-usage-limit create deployment limited-hog --image vish/stress
+   kubectl -n low-usage-limit get pods
+   k -n low-usage-limit get pod limited-hog-xxxxx -o yaml
+   k get rs
+   K get rs -A 
+   k -n low-usage-limit delete deploy limited-hog 
+   k  create -f rs.yaml
+   k describe rs rs-one
