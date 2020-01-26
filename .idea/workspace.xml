@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/k8s-webforce3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car-map.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curl-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curl.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simpleshell.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rs.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/rs.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +31,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -94,21 +78,26 @@
     </state>
     <state x="-1687" y="3" key="#Deployment/0.0.1920.1040/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579786852911" />
     <state x="350" y="5" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1579934703085" />
-    <state x="599" y="0" key="CommitChangelistDialog2" timestamp="1580028643624">
+    <state x="599" y="0" key="CommitChangelistDialog2" timestamp="1580028674241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1521" y="0" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579867115489" />
     <state x="598" y="119" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1579783416414" />
-    <state x="599" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580028643624" />
+    <state x="599" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580028674241" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1579957333889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579957333889" />
-    <state x="-1552" y="155" key="Vcs.Push.Dialog.v2" timestamp="1579867118667">
-      <screen x="-1920" y="0" width="1280" height="680" />
+    <state x="463" y="166" key="SettingsEditor" timestamp="1580028719438">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580028719438" />
+    <state x="552" y="237" key="Vcs.Push.Dialog.v2" timestamp="1580028676652">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1552" y="155" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579867118667" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1579783429506" />
+    <state x="552" y="237" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580028676652" />
     <state x="768" y="378" key="publish.login" timestamp="1579890729219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
