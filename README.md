@@ -41,6 +41,7 @@
   ssh -L 12000:51.68.5.225:30000 etudiant@localhost 
 ```
 ## CPU and Limits
+```shell script
   kubectl create deployment hog --image vish/stress
    k get deployment hog
    k describe deployment hog
@@ -67,3 +68,35 @@
    k -n low-usage-limit delete deploy limited-hog 
    k  create -f rs.yaml
    k describe rs rs-one
+   k get pods
+   kubectl delete rs rs-one --cascade=false
+   kubectl describe rs rs-one
+   k get pods
+   kubectl create -f rs.yaml
+   k get rs,pod
+   kubectl edit po rs-one-xxxx
+   k edit po rs-one-h6kpl
+   k get rs
+   kubectl get po -L system
+   k  delete rs rs-one
+   kubectl get po -L system
+   kubectl describe po rs-one-h6kpl | grep Image:
+```
+   ## Rolling update
+   
+   ```shell script
+     k create -f curl.yaml -n kube-public  
+     k create -f frontend.yaml
+     k create -f webapp-service.yaml    
+     chmod +x curl-test.sh
+     ./curl-test.sh
+     # ouvrir un second shell pour modifier l'objet deployment k8s directement
+     k edit deploy  frontend 
+      kubectl rollout status deployment/frontend  
+      kubectl rollout history deployment/frontend
+      kubectl rollout undo deployment/frontend
+   
+   
+   
+   
+   
