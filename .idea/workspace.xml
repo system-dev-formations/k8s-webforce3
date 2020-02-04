@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/curl-test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/lab-rollingupdate/curl-test.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-rollingupdate/curl.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-rollingupdate/frontend.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-rollingupdate/webapp-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-rollingupdate/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crd/crd.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,7 @@
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\lab-rollingupdate" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\crunchydevops\kubernetes\k8s-webforce3" />
       <recent name="D:\project_go\k8s-webforce3\lab-monitoring" />
       <recent name="D:\project_go\k8s-webforce3" />
     </key>
