@@ -24,10 +24,10 @@
     watch k get pod
     watch kubectl get pod
 ```
-## mysql admin
+## mysql admin password
 ```shell script
    MYSQL_ROOT_PASSWORD=$(kubectl get secret --namespace default mysql -o jsonpath="{.data.mysql-root-password}" | base64 --decode; echo)
-  echo $MYSQL_ROOT_PASSWORD
+   echo $MYSQL_ROOT_PASSWORD
 ```
 ## se connecter a Mysql en dehors du cluster 
 ```shell script
