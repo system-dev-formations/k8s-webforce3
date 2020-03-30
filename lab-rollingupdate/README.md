@@ -8,7 +8,7 @@
      ./curl-test.sh
      # ouvrir un second shell pour modifier l'objet deployment k8s directement
      k edit deploy  frontend 
-      kubectl rollout status deployment/frontend  
-      kubectl rollout history deployment/frontend
-      kubectl rollout undo deployment/frontend
+     kubectl rollout status deployment/frontend  
+     kubectl rollout history deployment/frontend
+     kubectl rollout undo deployment/frontend
    ```

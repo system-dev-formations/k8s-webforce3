@@ -35,7 +35,7 @@
   k get ep nginx 
   kubectl exec nginx-xxxxxx -- printenv |grep KUBERNETES
   kubectl delete svc nginx
-  kubectl expose deployment nginx --type=LoadBalancer
+  kubectl expose deployment nginx --typeclear
   kubectl get svc
   k get svc -A
   ssh -L 12000:51.68.5.225:30000 etudiant@localhost 
