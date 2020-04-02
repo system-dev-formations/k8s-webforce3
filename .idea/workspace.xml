@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lab-rollingupdate/README.md" afterDir="false" />
+    <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="add lab-helm">
+      <change afterPath="$PROJECT_DIR$/cnat/cnat-kubebuilder/config/samples/cnat-rock-example.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pod-definition.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crd/crd.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +29,12 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@51.68.5.225" type="feb32156:DbDataSourceImpl" />
+        <item name="@164.132.182.17" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@164.132.182.17" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -49,20 +57,21 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cnat/cnat-kubebuilder/config/samples" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.atlassian.bitbucket.linky" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\lab-rollingupdate" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\cnat\cnat-kubebuilder\config\samples" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3" />
       <recent name="D:\project_go\k8s-webforce3\lab-monitoring" />
       <recent name="D:\project_go\k8s-webforce3" />
@@ -101,42 +110,52 @@
     <MESSAGE value="more comments" />
     <MESSAGE value="more changes" />
     <MESSAGE value="add lab-helm" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lab-helm" />
+    <MESSAGE value="updated after the webforce3 training course" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated after the webforce3 training course" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="350" y="5" key="#Deployment" timestamp="1580151198293">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2265" y="34" key="#Deployment" timestamp="1585821841681">
+      <screen x="1920" y="0" width="1440" height="860" />
     </state>
+    <state x="-1034" y="29" key="#Deployment/0.0.1920.1040/-1360.0.1360.728@-1360.0.1360.728" timestamp="1580813007694" />
+    <state x="2265" y="34" key="#Deployment/0.0.1920.1040/-1680.16.1680.1010/1920.0.1440.860/3360.0.1360.728@1920.0.1440.860" timestamp="1585821841681" />
     <state x="-1687" y="3" key="#Deployment/0.0.1920.1040/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579786852911" />
     <state x="350" y="5" key="#Deployment/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1580129112438" />
-    <state x="350" y="5" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1580151198293" />
-    <state x="859" y="365" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580152202644">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="350" y="5" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1580795459243" />
+    <state x="-816" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580823599587">
+      <screen x="-1360" y="0" width="1360" height="728" />
     </state>
+    <state x="-816" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1360.0.1360.728@-1360.0.1360.728" timestamp="1580823599587" />
     <state x="690" y="232" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1580122575966" />
     <state x="859" y="365" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580152202644" />
-    <state x="598" y="119" key="CommitChangelistDialog2" timestamp="1580128393864">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2369" y="59" key="CommitChangelistDialog2" timestamp="1585574734746">
+      <screen x="1920" y="0" width="1440" height="860" />
     </state>
+    <state x="2369" y="59" key="CommitChangelistDialog2/0.0.1920.1040/-1680.16.1680.1010/1920.0.1440.860/3360.0.1360.728@1920.0.1440.860" timestamp="1585574734746" />
     <state x="-1521" y="0" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579867115489" />
     <state x="598" y="119" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1580128393864" />
     <state x="599" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580028729261" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1579957333889">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1580823984953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="-836" y="195" key="FileChooserDialogImpl/0.0.1920.1040/-1360.0.1360.728@-1360.0.1360.728" timestamp="1580809242055" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040/-1360.0.1360.728@0.0.1920.1040" timestamp="1580823984953" />
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579957333889" />
-    <state width="262" height="457" key="HiddenNamespacesPopup" timestamp="1580152214245">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="196" height="320" key="HiddenNamespacesPopup" timestamp="1580823608197">
+      <screen x="-1360" y="0" width="1360" height="728" />
     </state>
+    <state width="196" height="320" key="HiddenNamespacesPopup/0.0.1920.1040/-1360.0.1360.728@-1360.0.1360.728" timestamp="1580823608197" />
     <state width="262" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1580122619549" />
     <state width="262" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1580152214245" />
-    <state x="463" y="166" key="SettingsEditor" timestamp="1580103133240">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2267" y="137" key="SettingsEditor" timestamp="1585666067980">
+      <screen x="1920" y="0" width="1440" height="860" />
     </state>
+    <state x="2267" y="137" key="SettingsEditor/0.0.1920.1040/-1680.16.1680.1010/1920.0.1440.860/3360.0.1360.728@1920.0.1440.860" timestamp="1585666067980" />
     <state x="463" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580103133240" />
-    <state x="552" y="237" key="Vcs.Push.Dialog.v2" timestamp="1580028732544">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2334" y="196" key="Vcs.Push.Dialog.v2" timestamp="1585574737955">
+      <screen x="1920" y="0" width="1440" height="860" />
     </state>
+    <state x="2334" y="196" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.16.1680.1010/1920.0.1440.860/3360.0.1360.728@1920.0.1440.860" timestamp="1585574737955" />
     <state x="-1552" y="155" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579867118667" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1579783429506" />
     <state x="552" y="237" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580028732544" />
@@ -146,5 +165,9 @@
     <state x="-1408" y="247" key="publish.login/0.0.1920.1040/-1920.0.1280.680@-1920.0.1280.680" timestamp="1579871220370" />
     <state x="768" y="378" key="publish.login/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1580117899199" />
     <state x="768" y="378" key="publish.login/0.0.1920.1040@0.0.1920.1040" timestamp="1579890729219" />
+    <state x="-1017" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580829615219">
+      <screen x="-1360" y="0" width="1360" height="728" />
+    </state>
+    <state x="-1017" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1360.0.1360.728@-1360.0.1360.728" timestamp="1580829615219" />
   </component>
 </project>
