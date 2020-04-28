@@ -33,7 +33,7 @@
   k -n rook-ceph exec -it $(kubectl -n rook-ceph get pod -l "app=rook-ceph-tools" \
  -o jsonpath='{.items[0].metadata.name}') bash
 ```
-![k8s-ceph cluster](screenshot/ceph-cluster.png)
+![k8s-ceph cluster](../screenshot/ceph-cluster.png)
 
 
 ## Create a Cpeh Shared Filesystem
@@ -42,10 +42,12 @@
   k -n rook-ceph exec -it $(kubectl -n rook-ceph get pod -l "app=rook-ceph-tools" \
    -o jsonpath='{.items[0].metadata.name}') bash
 ```
-![k8s-ceph cluster1](screenshot/ceph-cluster1.png)
+![k8s-ceph cluster1](../screenshot/ceph-cluster1.png)
 
-
-
+## Create Deployment using Ceph Filesystem
+```shell script
+  k create namespace read-write-many-tutorial
+```
 
 `
 

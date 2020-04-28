@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  namespace: read-write-many-tutorial
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: read-write-many
+  template:
+    metadata:
+      labels:
+        app: read-write-many
+    spec:
+      volumes:
+        - name: nginx-data
+          flexVolume:
+            driver: ceph.rook.io/rook
+            fsType: ceph
+            options:
+              fsName: firstcephfs
+              clusterNamespace: rook-ceph
+      containers:
+        - image: nginx:latest
+          name: nginx
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - mountPath: "/data"
+              name: nginx-data
+              readOnly: false
