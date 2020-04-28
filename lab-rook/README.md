@@ -36,11 +36,16 @@
 ![k8s-ceph cluster](../screenshot/ceph-cluster.png)
 
 
-## Create a Cpeh Shared Filesystem
+## Create a Ceph Shared Filesystem
 ```shell script
   k create -f test-filesystem.yaml
   k -n rook-ceph exec -it $(kubectl -n rook-ceph get pod -l "app=rook-ceph-tools" \
    -o jsonpath='{.items[0].metadata.name}') bash
+ or 
+ kubectl exec -it rook-ceph-tools-86d9c9d647-jzrl2 sh -n rook-ceph
+ sh-4.2# ceph -s
+ ceph osd status
+ ceph osd pool stats
 ```
 ![k8s-ceph cluster1](../screenshot/ceph-cluster1.png)
 

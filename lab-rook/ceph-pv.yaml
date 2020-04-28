@@ -1,0 +1,63 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ceph-secret-admin
+data:
+  key: QVFEcytKaGF6UVlmRmhBQWJOZTNaZjYvaFVFdkhpRVVQejJOWFE9PQ==
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ceph-pv
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  rbd:
+    monitors:
+      - 10.103.2.24:6789
+    pool: kube
+    image: ceph-image
+    user: admin
+    secretRef:
+      name: ceph-secret-admin
+    fsType: ext4
+    readOnly: false
+  persistentVolumeReclaimPolicy: Recycle
+
+---
+
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: ceph-claim
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ceph-pod1
+spec:
+  containers:
+    - name: ceph-busybox
+      image: busybox
+      command: ["sleep", "60000"]
+      volumeMounts:
+        - name: ceph-vol1
+          mountPath: /usr/share/busybox
+          readOnly: false
+  volumes:
+    - name: ceph-vol1
+      persistentVolumeClaim:
+        claimName: ceph-claim
