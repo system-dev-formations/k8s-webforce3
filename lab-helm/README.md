@@ -1,8 +1,8 @@
 # Installer Helm
 ##Installation de binaire helm
 ```shell script
-   wget https://get.helm.sh/helm-v3.0.2-linux-amd64.tar.gz
-   tar -zxvf helm-v3.0.2-linux-amd64.tar.gz
+   wget https://get.helm.sh/helm-v3.2.0-linux-amd64.tar.gz
+   tar -zxvf helm-v3.2.0-linux-amd64.tar.gz
     cd linux-amd64/
    sudo cp helm /usr/local/bin/helm
    cd 

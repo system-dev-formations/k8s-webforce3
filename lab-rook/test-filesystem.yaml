@@ -1,0 +1,15 @@
+apiVersion: ceph.rook.io/v1
+kind: CephFilesystem
+metadata:
+  name: firstcephfs
+  namespace: rook-ceph
+spec:
+  metadataPool:
+    replicated:
+      size: 2
+  dataPools:
+    - replicated:
+        size: 2
+  metadataServer:
+    activeCount: 1
+    activeStandby: true

@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="6d03043d-29db-4d90-a9b5-0f0c55b7e957" name="master-setup" url="http://51.68.5.208">
-        <fileTransfer host="51.68.5.208" port="22" accessType="SFTP">
+        <fileTransfer host="51.68.5.208" port="22" privateKey="C:\Users\docke\.ssh\id_rsa" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

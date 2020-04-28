@@ -5,7 +5,7 @@
       <paths name="master-setup">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/ubuntu/cnat" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
