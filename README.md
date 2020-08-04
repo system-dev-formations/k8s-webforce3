@@ -35,9 +35,10 @@
   k get ep nginx 
   kubectl exec nginx-xxxxxx -- printenv |grep KUBERNETES
   kubectl delete svc nginx
-  kubectl expose deployment nginx --typeclear
+  kubectl expose deployment nginx --typecl
   kubectl get svc
   k get svc -A
+  # if there is an issue use a ssh tunnel
   ssh -L 12000:51.68.5.225:30000 etudiant@localhost 
 ```
 ## CPU and Limits
