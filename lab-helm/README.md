@@ -11,7 +11,7 @@
 ## Chercher un chart dans le repository hub 
 ``` helm search hub wordpress```  
 
-## ajouter un repo et installer mysql  chart
+## ajouter un repo et installer mysql chart
 ```shell script
     helm repo add stable https://kubernetes-charts.storage.googleapis.com
     helm search repo stable
