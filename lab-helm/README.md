@@ -22,7 +22,7 @@
     k get pvc
     helm install  mysql --set mysqlRootPassword=rootpassword,mysqlUser=mysql,mysqlPassword=my-password,mysqlDatabase=mydatabase,persistence.existingClaim=mysql-pvc stable/mysql
     k get pod
-    watch k get pod
+    watch k get pod  #  k is an alias so it can't be used in a command shell using watch
     watch kubectl get pod
 ```
 ## mysql admin password
@@ -34,6 +34,7 @@
 ```shell script
      sudo apt-get install -y mysql-client-core-5.7
      k port-forward svc/mysql 3306
+     # in another shell 
      mysql -h 127.0.0.1 -P 3306 -u root -p
 ``` 
 
