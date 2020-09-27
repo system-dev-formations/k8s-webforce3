@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="362f013e-1db5-4262-9e42-7342a5778326" name="scaleway">
-        <fileTransfer accessType="SFTP" host="51.68.5.250" port="22" sshConfigId="dfb0a3bf-1413-4561-968c-04be3c477cfe" sshConfig="master-setup">
+      <webServer id="362f013e-1db5-4262-9e42-7342a5778326" name="pink-master">
+        <fileTransfer accessType="SFTP" host="137.74.61.72" port="22" sshConfigId="dfb0a3bf-1413-4561-968c-04be3c477cfe" sshConfig="master-setup" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
