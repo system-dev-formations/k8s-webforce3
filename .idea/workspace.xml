@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic01/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic01/custom-secret.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic01/custom-service-account.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic01/nginx-deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic01/nginx-hpa.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic01/nginx-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic01/pod-with-secrets.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic01/role-binding.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic01/role.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic02/helloworld.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic02/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ckad/rc-definition.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ckad/replicaset-definition.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/operator-sdk/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-client/list_pods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/velero/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webflask-postgres/db.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webflask-postgres/pgadmin.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/k8s-webforce3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/k8s-webforce3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
@@ -45,7 +45,7 @@
     </expand>
     <select />
   </component>
-  <component name="GOROOT" path="D:\Go" />
+  <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -59,17 +59,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.dep.integrator" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/basic01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webflask-postgres" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -77,7 +79,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -85,12 +87,49 @@
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\lab-rollingupdate" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\webflask-postgres" />
+      <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\ckad" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\basic01" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\cnat\cnat-kubebuilder\config\samples" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3" />
-      <recent name="D:\project_go\k8s-webforce3\lab-monitoring" />
-      <recent name="D:\project_go\k8s-webforce3" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.list_pods">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="k8s-webforce3" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/basic02/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="list_pods" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="k8s-webforce3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-client" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-client/list_pods.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.list_pods" />
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,44 +158,63 @@
     <MESSAGE value="added lab-etcd-operator" />
     <MESSAGE value="added jupyter deployment" />
     <MESSAGE value="added python deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="added python deployment" />
+    <MESSAGE value="added basic01 deployment examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="added basic01 deployment examples" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="4243" y="40" key="#Deployment" timestamp="1601194411582">
+    <state x="4243" y="40" key="#Deployment" timestamp="1605176433322">
       <screen x="3840" y="0" width="1680" height="1010" />
     </state>
     <state x="4243" y="40" key="#Deployment/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@3840.0.1680.1010" timestamp="1601194411582" />
-    <state x="2265" y="34" key="#Deployment/0.0.1920.1040/3360.-161.1680.1010/1920.0.1440.860/-1360.0.1360.728@1920.0.1440.860" timestamp="1593868119493" />
     <state x="3763" y="-121" key="#Deployment/0.0.1920.1040/3360.-161.1680.1010/1920.0.1440.860/-1360.0.1360.728@3360.-161.1680.1010" timestamp="1596535223387" />
-    <state x="4224" y="25" key="#SSH_Configurations" timestamp="1601194354200">
+    <state x="4243" y="40" key="#Deployment/0.0.1920.1040/3840.0.1680.1010/1920.0.1920.1040@3840.0.1680.1010" timestamp="1605176433322" />
+    <state x="4224" y="25" key="#SSH_Configurations" timestamp="1605176262792">
       <screen x="3840" y="0" width="1680" height="1010" />
     </state>
     <state x="4224" y="25" key="#SSH_Configurations/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@3840.0.1680.1010" timestamp="1601194354200" />
-    <state x="2249" y="21" key="#SSH_Configurations/0.0.1920.1040/3360.-161.1680.1010/1920.0.1440.860/-1360.0.1360.728@1920.0.1440.860" timestamp="1593868081327" />
     <state x="3744" y="-136" key="#SSH_Configurations/0.0.1920.1040/3360.-161.1680.1010/1920.0.1440.860/-1360.0.1360.728@3360.-161.1680.1010" timestamp="1596535137014" />
+    <state x="4224" y="25" key="#SSH_Configurations/0.0.1920.1040/3840.0.1680.1010/1920.0.1920.1040@3840.0.1680.1010" timestamp="1605176262792" />
     <state x="4461" y="222" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1599486807321">
       <screen x="3840" y="0" width="1680" height="1010" />
     </state>
     <state x="4461" y="222" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@3840.0.1680.1010" timestamp="1599486807321" />
-    <state x="4305" y="73" key="CommitChangelistDialog2" timestamp="1599634272702">
-      <screen x="3840" y="0" width="1680" height="1010" />
+    <state x="2451" y="75" key="CommitChangelistDialog2" timestamp="1601209609967">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2451" y="75" key="CommitChangelistDialog2/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@1920.0.1920.1040" timestamp="1597050985818" />
+    <state x="2451" y="75" key="CommitChangelistDialog2/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@1920.0.1920.1040" timestamp="1601209609967" />
     <state x="4305" y="73" key="CommitChangelistDialog2/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@3840.0.1680.1010" timestamp="1599634272702" />
     <state x="3825" y="-88" key="CommitChangelistDialog2/0.0.1920.1040/3360.-161.1680.1010/1920.0.1440.860/-1360.0.1360.728@3360.-161.1680.1010" timestamp="1596534562913" />
-    <state x="4487" y="253" key="FileChooserDialogImpl" timestamp="1601194346331">
+    <state x="4487" y="253" key="FileChooserDialogImpl" timestamp="1605176253741">
       <screen x="3840" y="0" width="1680" height="1010" />
     </state>
-    <state x="2659" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@1920.0.1920.1040" timestamp="1599985955092" />
+    <state x="2659" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@1920.0.1920.1040" timestamp="1603267021897" />
     <state x="4487" y="253" key="FileChooserDialogImpl/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@3840.0.1680.1010" timestamp="1601194346331" />
-    <state x="4246" y="38" key="SettingsEditor" timestamp="1599488577085">
-      <screen x="3840" y="0" width="1680" height="1010" />
+    <state x="4487" y="253" key="FileChooserDialogImpl/0.0.1920.1040/3840.0.1680.1010/1920.0.1920.1040@3840.0.1680.1010" timestamp="1605176253741" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603196498212">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@1920.0.1920.1040" timestamp="1603196498212" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603196498212">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@1920.0.1920.1040" timestamp="1603196498212" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603196498212">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@1920.0.1920.1040" timestamp="1603196498212" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603196498212">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@1920.0.1920.1040" timestamp="1603196498212" />
+    <state x="2384" y="39" key="SettingsEditor" timestamp="1603033076325">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2384" y="39" key="SettingsEditor/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@1920.0.1920.1040" timestamp="1603033076325" />
     <state x="4246" y="38" key="SettingsEditor/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@3840.0.1680.1010" timestamp="1599488577085" />
-    <state x="4272" y="237" key="Vcs.Push.Dialog.v2" timestamp="1599634275144">
-      <screen x="3840" y="0" width="1680" height="1010" />
+    <state x="2414" y="244" key="Vcs.Push.Dialog.v2" timestamp="1601209612322">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2414" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@1920.0.1920.1040" timestamp="1597050988148" />
+    <state x="2414" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@1920.0.1920.1040" timestamp="1601209612322" />
     <state x="4272" y="237" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1360.0.1360.728/1920.0.1920.1040/3840.0.1680.1010@3840.0.1680.1010" timestamp="1599634275144" />
     <state x="3792" y="76" key="Vcs.Push.Dialog.v2/0.0.1920.1040/3360.-161.1680.1010/1920.0.1440.860/-1360.0.1360.728@3360.-161.1680.1010" timestamp="1596534565834" />
     <state x="2750" y="411" key="publish.login" timestamp="1597051095355">
