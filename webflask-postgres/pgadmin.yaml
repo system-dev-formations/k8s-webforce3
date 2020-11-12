@@ -21,9 +21,9 @@ spec:
           image: "dpage/pgadmin4"
           env:
             - name : PGADMIN_DEFAULT_EMAIL
-              value: ambient-it@gmail.com
+              value: "ambient-it@gmail.com"
             - name: PGADMIN_DEFAULT_PASSWORD
-              value: p4ssw0rd
+              value: "p4ssw0rd"
           ports:
             - name: pgadmin
               containerPort: 80
