@@ -2,15 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="362f013e-1db5-4262-9e42-7342a5778326" name="pink-master">
-        <fileTransfer accessType="SFTP" host="51.68.5.217" port="22" sshConfigId="7f6e2a68-5cce-499f-bb22-b9352fdd5750" sshConfig="ubuntu@51.68.5.217:22 key" keyPair="true">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="e6f6a56b-558b-45e5-89fb-35d7aea0a2ed" name="minikube">
-        <fileTransfer accessType="SFTP" host="51.68.5.217" port="22" sshConfigId="7f6e2a68-5cce-499f-bb22-b9352fdd5750" sshConfig="ubuntu@51.68.5.217:22 key" keyPair="true">
+      <webServer id="20a6ea2c-65e0-4746-864f-fc5e0ded9475" name="etudiant-1">
+        <fileTransfer accessType="SFTP" host="164.132.212.92" port="22" sshConfigId="ecb7d2e9-e408-4e73-bc01-56f993bb26a0" sshConfig="centos@164.132.212.92:22 key" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

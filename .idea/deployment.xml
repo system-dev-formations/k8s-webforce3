@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="pink-master">
+  <component name="PublishConfigData">
     <serverData>
-      <paths name="minikube">
+      <paths name="etudiant-1">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/ubuntu/k8-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="pink-master">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/centos/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

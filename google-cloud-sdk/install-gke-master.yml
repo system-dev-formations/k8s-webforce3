@@ -1,0 +1,27 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name:  update cache
+      yum: update_cache=yes
+    - name:  add epel release
+      yum:
+        name: epel-release
+        state: latest
+    - name: copy google-cloud-sdk repo
+      copy:
+        src: gcloud-repo
+        dest: /etc/yum.repos.d/google-cloud-sdk.repo
+        remote_src: yes
+    - name: install all packages
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - google-cloud-sdk
+          - htop
+          - iotop
+          - iftop
+          - git
+          - wget
+          - snapd

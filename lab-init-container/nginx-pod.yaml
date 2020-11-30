@@ -1,0 +1,23 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: nginx
+spec:
+  restartPolicy: Always
+  volumes:
+    - name: data
+      emptyDir: {}
+  initContainers:
+    - name: nginx-init
+      image: docker/whalesay
+      command: [sh, -c]
+      args: [echo "<pre>$(cowsay -b 'Hello Kubernetes')</pre>" > /data/index.html]
+      volumeMounts:
+        - name: data
+          mountPath: /data
+  containers:
+    - name: nginx
+      image: nginx:1.11
+      volumeMounts:
+        - name: data
+          mountPath: /usr/share/nginx/html
