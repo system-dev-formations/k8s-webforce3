@@ -14,6 +14,6 @@ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret |
 ```
 ## Dans votre navigateur firefox 
 Tapez l'adresse IP de votre cluster et le port d'ecoute de votre dashboard.   
-Comme vous n'avez pas de certificat SSL valide il faut forcer la connexion de votre navigateur.
+Comme vous n'avez pas de certificat SSL valide il faut forcer la connexion dans votre navigateur.
 
 

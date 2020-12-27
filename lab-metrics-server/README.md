@@ -1,9 +1,7 @@
 # lab metrics-server
 ## installation 
 ```shell script
-   git clone https://github.com/cesigit/metrics-server.git
-   cd metrics-server
-   k create -f deploy/1.8+
+  kubectl create -f components.yaml
 ```
 Attendre quelques temps avant d'obtenir des metriques  
 ```shell script
