@@ -13,12 +13,13 @@
   kubectl get events
   kubectl get deployment nginx -o yaml 
   kubectl get deployment nginx -o yaml > first.yaml
+  kubectl delete deploy nginx
   epurer les lignes necessaires
   k create -f first.yaml
   kubectl get deployment nginx -o yaml > second.yaml
   kubectl create deployment two --image=nginx --dry-run -o yaml
-  kubectl get deployment nginx --export -o yaml
-  kubectl get deployment nginx --export -o json
+  #kubectl get deployment nginx --export -o yaml
+
   k expose -h
   kubectl expose deployment/nginx
   kubectl replace -f first.yaml
@@ -35,7 +36,7 @@
   k get ep nginx 
   kubectl exec nginx-xxxxxx -- printenv |grep KUBERNETES
   kubectl delete svc nginx
-  kubectl expose deployment nginx --typecl
+  kubectl expose deployment nginx --type=LoadBalancer
   kubectl get svc
   k get svc -A
   # if there is an issue use a ssh tunnel
@@ -45,7 +46,7 @@
 ```shell script
   kubectl create deployment hog --image vish/stress
    k get deployment hog
-   k describe deployment hog
+  k describe deployment hog
    kubectl get deployment hog --export -o yaml > hog.yaml
    k replace -f hog.yaml
    k get po 
