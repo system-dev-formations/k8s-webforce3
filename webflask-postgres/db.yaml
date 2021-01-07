@@ -34,7 +34,9 @@ spec:
   selector:
     app: db
     tier: backend
+  type: NodePort
   ports:
     - protocol: TCP
       port: 5432
       targetPort: db
+      nodePort: 32000

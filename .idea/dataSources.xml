@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@164.132.182.17" uuid="4e829a34-90e9-4a7c-8856-1bbaf8130af4">
-      <driver-ref>mysql.8</driver-ref>
+    <data-source source="LOCAL" name="k8s-cluster-postgresql" uuid="2984a005-268d-4734-9aee-5e111e811a3a">
+      <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://164.132.182.17:30980</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://172.81.178.44:32000/postgres</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
 </project>
