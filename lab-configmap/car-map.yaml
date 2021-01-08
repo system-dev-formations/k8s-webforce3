@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fast-car
+  namespace: default
+data:
+  car.make: Citroen
+  car.model: DS3
+  car.body: blue

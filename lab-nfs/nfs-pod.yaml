@@ -4,7 +4,7 @@ metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
   labels:
-    app: hog
+    app: nginx
   managedFields:
   - apiVersion: apps/v1
     fieldsType: FieldsV1
@@ -31,7 +31,7 @@ metadata:
               f:app: {}
           f:spec:
             f:containers:
-              k:{"name":"stress"}:
+              k:{"name":"nginx"}:
                 .: {}
                 f:image: {}
                 f:imagePullPolicy: {}
@@ -46,7 +46,7 @@ metadata:
             f:terminationGracePeriodSeconds: {}
     manager: kubectl-create
     operation: Update
-    time: "2021-01-07T14:50:33Z"
+    time: "2021-01-07T13:33:13Z"
   - apiVersion: apps/v1
     fieldsType: FieldsV1
     fieldsV1:
@@ -80,8 +80,8 @@ metadata:
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
-    time: "2021-01-07T14:50:36Z"
-  name: hog
+    time: "2021-01-07T13:33:20Z"
+  name: nginx
   namespace: default
 spec:
   progressDeadlineSeconds: 600
@@ -89,7 +89,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: hog
+      app: nginx
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -98,30 +98,25 @@ spec:
   template:
     metadata:
       labels:
-        app: hog
+        app: nginx
     spec:
       containers:
-      - image: vish/stress
+      - image: nginx
         imagePullPolicy: Always
-        name: stress
-        resources:
-          limits:
-            cpu: "1"
-            memory: "4Gi"
-          requests:
-            cpu: "0.5"
-            memory: "2500Mi"
-        args:
-        - -cpus
-        - "2"
-        - -mem-total
-        - "950Mi"
-        - -mem-alloc-size
-        - "100Mi"
-        - -mem-alloc-sleep
-        - "1s"
+        name: nginx
+        volumeMounts:
+          - mountPath: /opt
+            name: nfs-vol
+        ports:
+          - containerPort: 80
+            protocol: TCP
+        resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
+      volumes:
+        - name: nfs-vol
+          persistentVolumeClaim:
+            claimName: pvc-one
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler

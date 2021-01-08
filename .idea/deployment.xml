@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="vm">
+  <component name="PublishConfigData" serverName="master">
     <serverData>
-      <paths name="test">
+      <paths name="master">
         <serverdata>
           <mappings>
             <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="vm">
+      <paths name="master-roubaix">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="node1">
         <serverdata>
           <mappings>
             <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
