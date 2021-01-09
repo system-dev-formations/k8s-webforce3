@@ -11,9 +11,7 @@ Add a line in /etc/exports
 sudo vi /etc/exports
 /opt/sfw/  *(rw,sync,no_root_squash,subtree_check)
 
-sudo 
-
-
+sudo exportfs -ra
 
 Install nfs on the node1
 ```shell
