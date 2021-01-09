@@ -20,19 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lab-configmap/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-configmap/car-map.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-configmap/simpleshell-1.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-configmap/simpleshell.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-nfs/PVol.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-nfs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-nfs/nfs-pod.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-nfs/pvc.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-nfs/nfs-rsquota.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-nfs/storage-quota.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-helm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-helm/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-nfs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-nfs/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,6 +200,7 @@
     <MESSAGE value="Added dashboard and more comments" />
     <MESSAGE value="Fixed lab-metric-server" />
     <MESSAGE value="added lab ingress" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lab ingress" />
+    <MESSAGE value="added lab nfs and confimap" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lab nfs and confimap" />
   </component>
 </project>

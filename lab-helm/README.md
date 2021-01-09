@@ -2,11 +2,13 @@
 ##Installation de binaire helm
 ```shell script
    wget https://github.com/helm/helm/archive/v3.4.2.tar.gz
-   tar -zxvf helm-v3.2.0-linux-amd64.tar.gz
-    cd linux-amd64/
-   sudo cp helm /usr/local/bin/helm
-   cd 
-   helm help
+   tar -zxvf v3.4.3.tar.gz
+    cd helm-3.4.2/
+    make
+    cd bin
+   sudo helm /usr/local/bin/helm
+   cd ~/k8s-webforce3/lab-helm
+   helm version
 ```
 ## Chercher un chart dans le repository hub 
 ``` helm search hub wordpress```  
