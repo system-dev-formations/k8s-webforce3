@@ -2,22 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="a0f29e69-0bb1-4190-b950-55e64050a360" name="master">
-        <fileTransfer accessType="SFTP" host="172.81.178.100" port="22" sshConfigId="ecb7d2e9-e408-4e73-bc01-56f993bb26a0" sshConfig="ubuntu@172.81.178.100:22 password">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="8308af64-1f9b-427f-8206-14d96609a139" name="node1">
-        <fileTransfer accessType="SFTP" host="172.81.178.42" port="22" sshConfigId="87c2dc59-6731-489c-bff8-36baf217d7f8" sshConfig="ubuntu@172.81.178.42:22 password">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="0487fede-a34b-4f93-b7e9-7617a47a9511" name="master-roubaix">
-        <fileTransfer accessType="SFTP" host="172.81.178.44" port="22" sshConfigId="b63a7ea6-bfaf-490f-be92-be0b7ff24355" sshConfig="ubuntu@172.81.178.44:22 password">
+      <webServer id="e67cbda1-9300-4ad8-b302-64f242d4181a" name="master">
+        <fileTransfer accessType="SFTP" host="51.68.5.230" port="22" sshConfigId="2c56ba44-f9a2-4d87-82b8-37c34c3f4ee6" sshConfig="ubuntu@51.68.5.230:22 key" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

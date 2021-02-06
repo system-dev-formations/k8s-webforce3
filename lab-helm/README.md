@@ -6,7 +6,7 @@
     cd helm-3.4.2/
     make
     cd bin
-   sudo helm /usr/local/bin/helm
+   sudo cp  helm /usr/local/bin/helm
    cd ~/k8s-webforce3/lab-helm
    helm version
 ```
@@ -15,7 +15,7 @@
 
 ## ajouter un repo et installer mysql chart
 ```shell script
-    helm repo add stable https://kubernetes-charts.storage.googleapis.com
+    helm repo add stable https://charts.helm.sh/stable
     helm search repo stable
     helm repo update
     k create -f mysqldb-hostpath.yaml
