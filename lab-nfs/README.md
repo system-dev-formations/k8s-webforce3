@@ -3,7 +3,7 @@
 ```shell
 sudo apt-get update 
 sudo apt-get install -y nfs-kernel-server
-mkdir /opt/sfw
+sudo mkdir /opt/sfw
 sudo chmod 1777 /opt/sfw
 sudo bash -c 'echo software > /opt/sfw/hello.txt'
 ```

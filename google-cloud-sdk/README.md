@@ -25,7 +25,7 @@ Connect using ssh to a node
 
 Stop the cluster 
 ```shell script
- gcloud container clusters resize prow-crunchydevops  --num-nodes=0
+ gcloud container clusters resize cluster-1 --num-nodes=0 --zone europe-west1-b
 ```
 
 Set kubectl credentials to a specific cluster
