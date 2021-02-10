@@ -1,7 +1,6 @@
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: null
   name: webapp-service
 spec:
   externalTrafficPolicy: Cluster
@@ -12,6 +11,5 @@ spec:
   selector:
     name: webapp
   sessionAffinity: None
-  type: NodePort
-status:
-  loadBalancer: {}
+  type: LoadBalancer
+

@@ -9,6 +9,20 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="45cdc153-e363-4dbf-b922-4c55cde0f487" name="lunanode">
+        <fileTransfer accessType="SFTP" host="51.255.211.141" port="22" sshConfigId="39d8f46b-81ea-4f18-bbd1-7e48dc1e4ba3" sshConfig="ubuntu@51.255.211.141:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="230a4880-9da9-4ab8-9b67-a65aefc8e551" name="marie">
+        <fileTransfer accessType="SFTP" host="164.132.212.109" port="22" sshConfigId="99ad7dc3-923c-42f7-9888-bb794fcb6626" sshConfig="ubuntu@164.132.212.109:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

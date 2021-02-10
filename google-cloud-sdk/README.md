@@ -1,4 +1,4 @@
-# Google-cloud-sdk
+# Google-cloud-sdk on Centos
 On you vm type: 
 ```shell script
  sudo yum update
@@ -25,11 +25,27 @@ Connect using ssh to a node
 
 Stop the cluster 
 ```shell script
- gcloud container clusters resize cluster-1 --num-nodes=0 --zone europe-west1-b
+ gcloud container clusters resize cluster-x --num-nodes=0 --zone europe-west1-b
 ```
 
 Set kubectl credentials to a specific cluster
 ```shell script
- gcloud container clusters get-credentials etudiant-1
+ gcloud container clusters get-credentials cluster-x
 ```
 
+## Google-cloud sdk on Ubuntu
+```shell
+sudo snap install google-cloud-sdk  --classic
+gcloud auth login
+gcloud config set project platinum-219712
+gcloud container clusters get-credentials cluster-x --zone europe-west1-b --project platinum-219712
+sudo snap install kubectl --classic
+kubectl get nodes
+kubectl get nodes -o wide
+kubectl top nodes
+kubectl top pod
+gcloud compute ssh gke-cluster-1-default-pool-db9c41a9-d2jv --zone europe-west1-b
+```
+
+# Gestion de la montee de version sous GCP 
+gcloud container node-pools describe default-pool --cluster cluster-2 --zone europe-west1-b

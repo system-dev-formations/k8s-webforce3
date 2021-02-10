@@ -2,6 +2,20 @@
 <project version="4">
   <component name="PublishConfigData" serverName="master">
     <serverData>
+      <paths name="lunanode">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="marie">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="master">
         <serverdata>
           <mappings>
