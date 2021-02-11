@@ -19,11 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+    <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="added rook general installation">
+      <change afterPath="$PROJECT_DIR$/rook/busybox-rc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/common.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/nfs-ceph.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/nfs-xfs.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/nfs.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/operator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/psp.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/pvc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/rbac.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/sc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/scc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/web-rc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/web-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rook/webhook.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-monitoring/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-monitoring/service.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rook/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rook/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +87,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210209_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210211_0000" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
