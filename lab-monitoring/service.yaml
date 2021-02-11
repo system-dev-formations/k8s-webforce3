@@ -9,7 +9,7 @@ metadata:
 spec:
   selector:
     app: grafana
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 3000
       targetPort: 3000

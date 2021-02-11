@@ -20,38 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lab-ingress-gke/hello-kubernetes-first-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-ingress-gke/hello-kubernetes-first.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-ingress-gke/hello-kubernetes-ingress.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-ingress-gke/hello-kubernetes-second-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-ingress-gke/hello-kubernetes-second.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-kompose/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-pod/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-pod/first.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rook/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflask-postgres/db-claim0-persistentvolumeclaim.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflask-postgres/db-deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflask-postgres/db-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflask-postgres/lan_network-networkpolicy.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflask-postgres/pgadmin-deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflask-postgres/pgadmin-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflask-postgres/todoapplication-claim0-persistentvolumeclaim.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflask-postgres/todoapplication-deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflask-postgres/todoapplication-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-cloud-sdk/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/google-cloud-sdk/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-dashboard/DASHBOARD.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-dashboard/DASHBOARD.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-etcd-operator/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-etcd-operator/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-etcd-operator/etcd-operator-crd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-etcd-operator/etcd-operator-crd.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-etcd/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-etcd/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-ingress/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-ingress-gke/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-ingress/hello-kubernetes-first.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-ingress/hello-kubernetes-ingress.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-ingress/hello-kubernetes-second.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-rollingupdate/webapp-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-rollingupdate/webapp-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-monitoring/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-monitoring/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rook/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rook/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +204,7 @@
     <MESSAGE value="added lab nfs and confimap" />
     <MESSAGE value="added dashboard" />
     <MESSAGE value="added more lab" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more lab" />
+    <MESSAGE value="added and checked many labs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added and checked many labs" />
   </component>
 </project>
