@@ -8,7 +8,7 @@
 # container that uploads to external storage.)
 
 # To run:
-#   kubectl apply -f pod.yaml
+#   kubectl apply -f pod_with_sidecar.yaml
 
 # Once the pod is running:
 #

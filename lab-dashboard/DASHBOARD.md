@@ -18,6 +18,8 @@ k get -svc -A --watch
 ```shell script
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret |
     grep admin-user | awk '{print $1}' )
+        
+     
 ```
 ## Dans votre navigateur firefox 
 Tapez l'adresse IP de votre cluster et le port d'ecoute de votre dashboard. 
