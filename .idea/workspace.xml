@@ -20,8 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lab-pod/basic.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-configmap/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-configmap/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-configmap/simpleshell.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-configmap/simpleshell.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-helm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-helm/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-nfs/PVol.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-nfs/PVol.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-nfs/nfs-pod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-nfs/nfs-pod.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +77,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210211_0004" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210213_0000" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />

@@ -82,7 +82,6 @@ metadata:
     operation: Update
     time: "2021-01-07T13:33:20Z"
   name: nginx-nfs
-  namespace: default
 spec:
   progressDeadlineSeconds: 600
   replicas: 1

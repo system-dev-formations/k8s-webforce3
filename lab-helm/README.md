@@ -2,7 +2,7 @@
 ##Installation de binaire helm
 ```shell script
    wget https://github.com/helm/helm/archive/v3.4.2.tar.gz
-   tar -zxvf v3.4.3.tar.gz
+   tar -zxvf v3.4.2.tar.gz
     cd helm-3.4.2/
     make
     cd bin
