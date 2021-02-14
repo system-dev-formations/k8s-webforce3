@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: todo-monolith
+spec:
+  containers:
+  - name: monolith
+    image: systemdevformations/todo-monolith:v1
+    ports:
+    - containerPort: 5000

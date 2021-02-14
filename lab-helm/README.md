@@ -24,10 +24,10 @@
     k get pvc
     helm install  mysql --set mysqlRootPassword=rootpassword,mysqlUser=mysql,mysqlPassword=my-password,mysqlDatabase=mydatabase,persistence.existingClaim=mysql-pvc stable/mysql
     k get pod
-    watch k get pod  #  k is an alias so it can't be used in a command shell using watch
-    watch kubectl get pod
+    k get pod -w #  k is an alias so it can't be used in a command shell using watch
+    k get pod --watch 
 ```
-## mysql admin password
+## Get mysql admin password
 ```shell script
    MYSQL_ROOT_PASSWORD=$(kubectl get secret --namespace default mysql -o jsonpath="{.data.mysql-root-password}" | base64 --decode; echo)
    echo $MYSQL_ROOT_PASSWORD

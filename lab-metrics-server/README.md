@@ -3,7 +3,7 @@
 ```shell script
   kubectl create -f components.yaml
 ```
-Attendre quelques temps avant d'obtenir des metriques  
+After au while we got some values  
 ```shell script
     k top nodes 
     k top pods 

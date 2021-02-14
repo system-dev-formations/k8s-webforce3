@@ -2,8 +2,15 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="45cdc153-e363-4dbf-b922-4c55cde0f487" name="herve">
-        <fileTransfer accessType="SFTP" host="51.255.211.244" port="22" sshConfigId="39d8f46b-81ea-4f18-bbd1-7e48dc1e4ba3" sshConfig="ubuntu@51.255.211.244:22 key" keyPair="true">
+      <webServer id="70cf181d-ab11-4ad7-aca0-1d59603e95db" name="fresh-master">
+        <fileTransfer accessType="SFTP" host="192.168.1.55" port="22" sshConfigId="39d8f46b-81ea-4f18-bbd1-7e48dc1e4ba3" sshConfig="hme@192.168.1.55:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="59adb57b-ec11-4d75-9274-d29164e01a54" name="lunanode-master">
+        <fileTransfer accessType="SFTP" host="172.81.182.33" port="22" sshConfigId="e80a57e3-85ac-4680-b3dc-f3abd2800382" sshConfig="ubuntu@172.81.182.33:22 key" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

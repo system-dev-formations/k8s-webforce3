@@ -1,0 +1,16 @@
+version: '3'
+
+networks:
+  lan_network:
+    driver: bridge
+
+services:
+  todoapplication:
+      hostname: todo
+      build: .
+      ports:
+        - 5000:5000
+      volumes:
+        - /opt/data:/opt/data
+      networks:
+        -  lan_network
