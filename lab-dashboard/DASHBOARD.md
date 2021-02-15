@@ -10,7 +10,7 @@ source <( kubectl completion bash | sed s/kubectl/k/g)
 k apply -f recommended.yaml 
 k apply -f dashboard-adminuser.yaml
 k get svc -A  # verifier l'adresse externe  ou votre remote vm et le port superieur a 30000
-k get -svc -A --watch 
+k get svc -A --watch 
 ```
 
 

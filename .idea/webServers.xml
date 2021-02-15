@@ -10,7 +10,7 @@
         </fileTransfer>
       </webServer>
       <webServer id="59adb57b-ec11-4d75-9274-d29164e01a54" name="lunanode-master">
-        <fileTransfer accessType="SFTP" host="172.81.182.33" port="22" sshConfigId="e80a57e3-85ac-4680-b3dc-f3abd2800382" sshConfig="ubuntu@172.81.182.33:22 key" keyPair="true">
+        <fileTransfer accessType="SFTP" host="170.75.164.141" port="22" sshConfigId="e80a57e3-85ac-4680-b3dc-f3abd2800382" sshConfig="ubuntu@170.75.164.141:22 key" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

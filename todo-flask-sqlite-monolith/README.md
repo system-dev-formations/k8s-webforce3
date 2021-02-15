@@ -56,7 +56,7 @@ k get pod -o wide
 # ssh to node and type 
 curl <IP>:5000
 or  on the master type
-k port-forward monolith-5ff76479d4-8t6j4 5000 
+k port-forward  todo-monolith 5000 
 in an other shell in the master 
 curl localhost:5000
 

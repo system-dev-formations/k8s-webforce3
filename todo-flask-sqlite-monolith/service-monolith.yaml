@@ -7,7 +7,7 @@ spec:
   ports:
   - port: 5000
     protocol: TCP
-    targetPort: 30000
+    targetPort: 5000
   selector:
     tier: my-monolith
   sessionAffinity: None

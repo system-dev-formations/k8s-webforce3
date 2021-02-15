@@ -20,25 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lab-guestbook/guestbook.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-static-pod/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-static-pod/static-web.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/deploy-todo-monolith.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/service-monolith.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/todo-monolith.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/todo.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/todo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/todos.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite/sqlite3/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/screenshot/k8s_network.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-helm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-helm/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-metrics-server/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-metrics-server/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-dashboard/DASHBOARD.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-dashboard/DASHBOARD.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-flask-sqlite-monolith/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-flask-sqlite-monolith/service-monolith.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/todo-flask-sqlite-monolith/service-monolith.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
