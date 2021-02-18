@@ -1,0 +1,10 @@
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: production
+  name: dev-prod
+rules:
+- apiGroups: ["", "extensions","apps"]
+  resources: ["pods", "replicasets", "deployments"]
+  verbs: ["get","watch","list","create"]
+

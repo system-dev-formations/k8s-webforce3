@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="70cf181d-ab11-4ad7-aca0-1d59603e95db" name="fresh-master">
-        <fileTransfer accessType="SFTP" host="192.168.1.55" port="22" sshConfigId="39d8f46b-81ea-4f18-bbd1-7e48dc1e4ba3" sshConfig="hme@192.168.1.55:22 password">
+        <fileTransfer accessType="SFTP" host="192.168.1.58" port="22" sshConfigId="39d8f46b-81ea-4f18-bbd1-7e48dc1e4ba3" sshConfig="hme@192.168.1.58:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
@@ -11,6 +11,20 @@
       </webServer>
       <webServer id="59adb57b-ec11-4d75-9274-d29164e01a54" name="lunanode-master">
         <fileTransfer accessType="SFTP" host="170.75.164.141" port="22" sshConfigId="e80a57e3-85ac-4680-b3dc-f3abd2800382" sshConfig="ubuntu@170.75.164.141:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="a0aa617f-bc30-4e3f-bb98-feccef453d92" name="toronto">
+        <fileTransfer accessType="SFTP" host="172.81.181.232" port="22" sshConfigId="ec34ef68-c40a-4d6a-801c-3fb5e7a89814" sshConfig="master">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="8aef38d6-8ef2-4e8c-a2da-6f0e974ac9e6" name="toronto-node">
+        <fileTransfer accessType="SFTP" host="172.81.183.187" port="22" sshConfigId="124b8b04-a497-4a2e-a437-a611f150854c" sshConfig="node">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

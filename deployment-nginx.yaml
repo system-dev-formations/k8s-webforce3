@@ -21,8 +21,7 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      creationTimestamp: null
-      labels:
+       labels:
         app: nginx
     spec:
       containers:

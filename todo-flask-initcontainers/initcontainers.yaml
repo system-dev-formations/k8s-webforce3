@@ -1,0 +1,25 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: init-demo
+spec:
+  containers:
+    - name: flask
+      image: systemdevformations/flaskweb
+      ports:
+        - containerPort: 5000
+      volumeMounts:
+        - mountPath: /opt/app
+          name: workdir
+  initContainers:
+    - name: install
+      image: systemdevformations/mysqlite
+      command:
+        - cat /todos.sql | /usr/bin/sqlite3 tododb.db
+      volumeMounts:
+        - mountPath: /work-dir
+          name: workdir
+  dnsPolicy: Default
+  volumes:
+    - name: workdir
+      emptyDir: {}

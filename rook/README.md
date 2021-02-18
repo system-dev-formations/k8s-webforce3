@@ -1,12 +1,10 @@
 # Rook 
 ## install rook 
 ```shell
-wget https://github.com/rook/rook/archive/v1.5.6.tar.gz
-tar -zxvf v1.5.6.tar.gz
-#or
-# upload files
-
-
+wget https://github.com/rook/rook/archive/v1.5.7.tar.gz
+tar -zxvf v1.5.7.tar.gz 
+cd rook-1.5.7/
+cd cluster/examples/kubernetes/nfs/
 ```
 
 
@@ -14,7 +12,7 @@ All commands
 ```shell
 k create -f common.yaml 
 k create -f operator.yaml 
-k -n rook-nfs-system get pod -w
+k -n rook-nfs-system get pod 
 k create -f psp.yaml  
 k create -f rbac.yaml  
 k create -f nfs-xfs.yaml 

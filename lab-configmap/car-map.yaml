@@ -4,6 +4,6 @@ metadata:
   name: fast-car
   namespace: default
 data:
-  car.make: Citroen
-  car.model: DS3
-  car.body: blue
+  car.make: "Citroen "
+  car.model: "DS3 "
+  car.body: "blue "
