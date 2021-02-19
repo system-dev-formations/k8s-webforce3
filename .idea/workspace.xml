@@ -20,34 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lab-services/service-clusterIP.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-stateful-aws/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-statefulSet/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-statefulSet/web.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-taint-tolerations/node_affinity.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-taint-tolerations/other.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-taint-tolerations/pod-with-toleration.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-taint-tolerations/taint.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-taint-tolerations/vip.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/StepByStep.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/etcd-resource.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/storageos-cluster-resource.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/storageos-example-pod.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/storageos-pvc.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/argocd/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/argocd/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crd/new-crontab.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/crd/new-crontab.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-etcd-operator/etcd-cluster-cr.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-etcd-operator/etcd-cluster-cr.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-etcd-operator/etcd-operator-crd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-etcd-operator/etcd-operator-crd.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-stateful/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-services/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-stateful/postgres-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-stateful-aws/postgres-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-stateful/postgres-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-stateful-aws/postgres-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-stateful/postgres-stateful.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-stateful-aws/postgres-stateful.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-stateful/storage-class-gp2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-stateful-aws/storage-class-gp2.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-taint-tolerations/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-taint-tolerations/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storageOS/exports" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storageOS/storageos-secret.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storageOS/StepByStep.md" beforeDir="false" afterPath="$PROJECT_DIR$/storageOS/StepByStep.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
