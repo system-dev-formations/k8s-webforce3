@@ -1,0 +1,37 @@
+apiVersion: "etcd.database.coreos.com/v1beta2"
+kind: "EtcdCluster"
+metadata:
+  name: "storageos-etcd"
+spec:
+  size: 1 # Set to 1 if insufficient nodes
+  version: "3.4.7"
+  pod:
+    etcdEnv:
+      - name: ETCD_QUOTA_BACKEND_BYTES
+        value: "2147483648"  # 2 GB
+      - name: ETCD_AUTO_COMPACTION_RETENTION
+        value: "1000" # Keep 1000 revisions
+      - name: ETCD_AUTO_COMPACTION_MODE
+        value: "revision" # Set the revision mode
+    resources:
+      requests:
+        cpu: 200m
+        memory: 300Mi
+    securityContext:
+      runAsNonRoot: true
+      runAsUser: 9000
+      fsGroup: 9000
+    tolerations:
+      - operator: "Exists" # add tolerations to match all taints on the master nodes where etcd will be deployed
+    affinity:
+      podAntiAffinity:
+        preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                  - key: etcd_cluster
+                    operator: In
+                    values:
+                      - storageos-etcd
+              topologyKey: kubernetes.io/hostname

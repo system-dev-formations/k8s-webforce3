@@ -39,6 +39,7 @@ export REPO=devops-toolkit # where the pull-request was created
 export APP_ID=pr-$REPO-$PR_ID # unique app id application
 export IMAGE_TAG=2.6.2  # image tag
 export HOSTNAME=$APP_ID.$INGRESS_HOST.xip.io # ingress
+source exports  # set up all variables
 ```
 ##  Install a  kyml tool
 ```shell
@@ -49,13 +50,13 @@ sudo curl -sfL -o /usr/local/bin/kyml https://github.com/frigus02/kyml/releases/
 ```
 source exports
 cat preview.yaml | kyml tmpl -e REPO -e APP_ID -e IMAGE_TAG -e HOSTNAME \ 
-| tee helm/templates/$APP_ID.yaml
+| tee ~/argocd-previews/helm/templates/$APP_ID.yaml
 ```
 
 ## Change the file pr-devops-tools-1.yaml in the argocd_previews repo 
 ```shell
 git add . 
-git commit "change base file"
+git commit -m "change base file"
 git push 
 ```
 

@@ -30,6 +30,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="1f8f9b89-024b-4542-b696-b7d46ca0d07e" name="taupe-master">
+        <fileTransfer accessType="SFTP" host="172.81.178.47" port="22" sshConfigId="557f642a-7921-46d4-be78-32850573b752" sshConfig="taupe">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

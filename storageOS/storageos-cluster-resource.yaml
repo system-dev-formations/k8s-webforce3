@@ -1,0 +1,13 @@
+apiVersion: storageos.com/v1
+kind: StorageOSCluster
+metadata:
+  name: example-storageoscluster
+  namespace: "storageos-operator"
+spec:
+  # StorageOS Pods are in kube-system by default
+  secretRefName: "storageos-api"
+  secretRefNamespace: "storageos-operator"
+  k8sDistro: "upstream"  # Set the Kubernetes distribution for your cluster (upstream, eks, aks, gke, rancher, dockeree)
+  # storageClassName: fast # The storage class creates by the StorageOS operator is configurable
+  kvBackend:
+    address: "storageos-etcd-client.etcd.svc.cluster.local:2379"
