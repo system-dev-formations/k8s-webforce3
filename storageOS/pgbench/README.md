@@ -33,7 +33,7 @@ $ kubectl get pods -w -l app=postgres
 Use the StorageOS CLI or the GUI to check that the master volume location and
 the mount location are the same. 
 ```bash
-$ kubectl -n storageos exec -it cli -- storageos volume ls
+kubectl -n kube-system exec -it cli -- storageos get volumes
 ```
 
 Exec into the pgbench container and run pgbench

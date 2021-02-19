@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/storageOS/pgbench/00-service-account.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/pgbench/10-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/pgbench/15-postgresd-configmap.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/pgbench/20-postgres-statefulset.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/pgbench/25-postgres-pgbench.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/pgbench/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storageOS/pgbench/20-postgres-statefulset.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/storageOS/pgbench/20-postgres-statefulset.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +183,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="more comments" />
     <MESSAGE value="add lab-helm" />
     <MESSAGE value="updated after the webforce3 training course" />
     <MESSAGE value="added rook ceph storage" />
@@ -213,6 +207,7 @@
     <MESSAGE value="Lot of modifications" />
     <MESSAGE value="Added storageOS" />
     <MESSAGE value="Added postgres example in storageOS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added postgres example in storageOS" />
+    <MESSAGE value="Added pgbench example in storageOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pgbench example in storageOS" />
   </component>
 </project>
