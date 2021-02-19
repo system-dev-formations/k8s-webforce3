@@ -19,10 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/storageOS/exports" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storageOS/storageos-secret.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storageOS/StepByStep.md" beforeDir="false" afterPath="$PROJECT_DIR$/storageOS/StepByStep.md" afterDir="false" />
+    <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="modified storageOS readme file">
+      <change afterPath="$PROJECT_DIR$/robot-shop-stan/robot-shop-redis.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storageOS/postgres/00-service-account.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storageOS/postgres/10-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storageOS/postgres/15-postgresd-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storageOS/postgres/20-postgres-statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storageOS/postgres/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storageOS/StepByStep.md" beforeDir="false" afterPath="$PROJECT_DIR$/storageOS/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,10 +103,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\storageOS" />
+      <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\robot-shop-stan" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\lab-taint-tolerations" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\lab-authorization" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\todo-flask-initcontainers\sqlite" />
-      <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\todo-flask-initcontainers\flask" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\todo-flask-initcontainers\flask" />
@@ -209,6 +214,7 @@
     <MESSAGE value="Added more files" />
     <MESSAGE value="Changed monolith" />
     <MESSAGE value="Lot of modifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lot of modifications" />
+    <MESSAGE value="Added storageOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added storageOS" />
   </component>
 </project>

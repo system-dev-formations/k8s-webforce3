@@ -1,4 +1,15 @@
 # Step by Step
+Reference :   
+https://docs.storageos.com/docs/self-eval/  
+https://docs.storageos.com/docs/operations/firstpvc/  
+git clone https://github.com/storageos/use-cases.git
+
+BEWARE: IF YOU HAVE ALREADY INSTALL STORAGEOS DO THIS
+```shell
+ wget  https://github.com/storageos/cluster-operator/releases/download/v2.3.3/storageos-operator.yaml
+ k delete -f storageos-operator
+ k delete ns storageos-operator
+```
 
 ## Install etcd operator
 ```shell
