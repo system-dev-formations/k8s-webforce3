@@ -4,21 +4,25 @@ https://docs.storageos.com/docs/self-eval/
 https://docs.storageos.com/docs/operations/firstpvc/  
 git clone https://github.com/storageos/use-cases.git
 
-BEWARE: IF YOU HAVE ALREADY INSTALL STORAGEOS DO THIS
+BEWARE: IF YOU HAVE ALREADY INSTALLED STORAGEOS DO THIS
 ```shell
  wget  https://github.com/storageos/cluster-operator/releases/download/v2.3.3/storageos-operator.yaml
- k delete -f storageos-operator
+ k delete -f storageos-operator.yaml
  k delete ns storageos-operator
+ # if you are stuck 
+ kubectl get namespace "storageos-operator" -o json | tr -d "\n" \
+ | sed "s/\"finalizers\": \[[^]]\+\]/\"finalizers\": []/" \
+ | kubectl replace --raw /api/v1/namespaces/storageos-operator/finalize -f -
 ```
 
 ## Install etcd operator
 ```shell
-cd
-git clone https://github.com/coreos/etcd-operator.git
 cd k8s-webforce3/storageOS
 source exports
+cd 
+git clone https://github.com/coreos/etcd-operator.git
 k create namespace $NAMESPACE
-cd ~/etc-operator/example/rbac/
+cd etc-operator/example/rbac/
 ./create-role.sh
 cd ~/k8s-webforce3/storageOS
 k -n $NAMESPACE create -f deployment.yaml
@@ -51,7 +55,7 @@ Create a Pod
 ```shell
 k create -f storageos-example-pod.yaml
 k get pod d1 -w
-exit
+Crtl-c
 k exec -it d1 -- bash
 echo Hello world! > /mnt/hello
 cat /mnt/hello

@@ -20,7 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storageOS/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/storageOS/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storageOS/etcd-resource.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/storageOS/etcd-resource.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storageOS/pgbench/20-postgres-statefulset.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/storageOS/pgbench/20-postgres-statefulset.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storageOS/pgbench/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/storageOS/pgbench/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storageOS/postgres/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/storageOS/postgres/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storageOS/storageos-pvc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/storageOS/storageos-pvc.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +191,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add lab-helm" />
     <MESSAGE value="updated after the webforce3 training course" />
     <MESSAGE value="added rook ceph storage" />
     <MESSAGE value="add lab-rook" />
@@ -208,6 +215,7 @@
     <MESSAGE value="Added storageOS" />
     <MESSAGE value="Added postgres example in storageOS" />
     <MESSAGE value="Added pgbench example in storageOS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pgbench example in storageOS" />
+    <MESSAGE value="Fixed error in  pgbench example (storageOS)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed error in  pgbench example (storageOS)" />
   </component>
 </project>

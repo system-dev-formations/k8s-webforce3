@@ -44,3 +44,7 @@ userdb    | postgres | SQL_ASCII | C       | C     | =Tc/postgres         +
 The password for the postgres user is password. You can see this is set in
 the ConfigMap file.
 
+## Scale 
+```shell
+k scale statefulset  postgres --replicas=3
+```

@@ -7,7 +7,7 @@ spec:
     matchLabels:
       app: postgres
       env: prod
-      storageos.com/hint.master: afip-k8s-node1-ref
+      storageos.com/hint.master: afip-k8s-node1-taupe
   serviceName: postgres
   replicas: 1
   template:
@@ -15,7 +15,7 @@ spec:
       labels:
         app: postgres
         env: prod
-        storageos.com/hint.master: afip-k8s-node1-ref
+        storageos.com/hint.master: afip-k8s-node1-taupe
     spec:
       serviceAccountName: postgres
       securityContext:

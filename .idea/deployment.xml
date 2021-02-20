@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="fresh-master">
+  <component name="PublishConfigData" serverName="local-master">
     <serverData>
-      <paths name="fresh-master">
+      <paths name="local-master">
         <serverdata>
           <mappings>
             <mapping deploy="/home/hme/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="lunanode-master">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="taupe-master">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="toronto">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="toronto-node">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

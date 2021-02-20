@@ -41,3 +41,9 @@ Exec into the pgbench container and run pgbench
 ```bash
 $ kubectl exec -it pgbench -- bash -c '/opt/cpm/bin/start.sh'
 ```
+
+## Troubleshooting 
+```shell
+k describe pod postgres-0
+k get events --sort-by=.metadata.creationTimestamp
+```
