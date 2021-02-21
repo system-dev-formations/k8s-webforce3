@@ -3,7 +3,7 @@ kind: "EtcdCluster"
 metadata:
   name: "storageos-etcd"
 spec:
-  size: 1 # Set to 1 if insufficient nodes
+  size: 3 # Set to 1 if insufficient nodes
   version: "3.4.7"
   pod:
     etcdEnv:
