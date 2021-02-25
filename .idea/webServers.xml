@@ -2,15 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="ff874f61-a2d7-4525-8807-3086c61f4321" name="local-master">
-        <fileTransfer accessType="SFTP" host="192.168.1.64" port="22" sshConfigId="6e4b13d6-7814-4aed-be08-9353500f058a" sshConfig="local-master">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="4d483c1c-9e30-428c-9917-afe0448ca6e4" name="vm-lunanode">
-        <fileTransfer accessType="SFTP" host="172.81.182.33" port="22" sshConfigId="f37109a4-4817-46b9-8c1d-022d192612a9" sshConfig="vm-lunanode">
+      <webServer id="14eb5a7c-b293-4e3d-9eda-bc7faf911e17" name="vm-teacher">
+        <fileTransfer accessType="SFTP" host="172.81.182.43" port="22" sshConfigId="e9b83472-d36b-4b6a-9b1b-3fdd77cf01e9" sshConfig="vm-master" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
