@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="14eb5a7c-b293-4e3d-9eda-bc7faf911e17" name="vm-teacher">
-        <fileTransfer accessType="SFTP" host="172.81.182.43" port="22" sshConfigId="e9b83472-d36b-4b6a-9b1b-3fdd77cf01e9" sshConfig="vm-master" keyPair="true">
+      <webServer id="cd5b0f09-f813-466b-961f-1d30eeb53b43" name="essai">
+        <fileTransfer accessType="SFTP" host="172.81.178.79" port="22" sshConfigId="61b17dc9-a179-4450-a942-9ee810c325e9" sshConfig="essai">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
