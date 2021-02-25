@@ -100,5 +100,21 @@ k get svc nginx  # Check if the service is there
 k get ep nginx   # find the endpoint
 ```
 
+## Scale up 
+Now scale up the deployment from one to three web servers.
+```shell
+k scale deploy nginx --replicas=3  # scale up to 3 web servers
+k delete pod <pod_name>  # delete a pod and see what's happen
+k get ep nginx
+k scale deploy nginx --replicas=0  # stop all pods
+```
 
+## Access from the outside
+```shell
+k get svc
+k delete svc nginx
+k expose deploy nginx --type=NodePort
+k get svc   # get a port number greater than 30000 
+
+```
 
