@@ -22,7 +22,7 @@ source exports
 cd 
 git clone https://github.com/coreos/etcd-operator.git
 k create namespace $NAMESPACE
-cd etc-operator/example/rbac/
+cd etcd-operator/example/rbac/
 ./create-role.sh
 cd ~/k8s-webforce3/storageOS
 k -n $NAMESPACE create -f deployment.yaml

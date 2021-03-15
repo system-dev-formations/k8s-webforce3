@@ -1,10 +1,10 @@
 # Imperative et Declarative Commandees
-## Creation d'un pod avec une commande imperative
+## Imperative command for creating a pod
 ```shell
 k run nginx --image=nginx  --port=8080
 ```
 
-## Create d'un pod d'une maniere declarative avec un fichier YAML
+## Declarative command for creation pod using a YAML file
 ```shell
 cd k8s-webforce3/lab-pod
 kubectl get pod nginx -o yaml > first.yaml

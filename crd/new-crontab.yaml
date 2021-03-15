@@ -1,4 +1,4 @@
-;apiVersion: training.webforce3.com/v1
+apiVersion: training.webforce3.com/v1
 kind: CronTab
 metadata:
   name: new-cron-object

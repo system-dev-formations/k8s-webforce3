@@ -109,7 +109,7 @@ k get ep nginx
 k scale deploy nginx --replicas=0  # stop all pods
 ```
 
-## Access from the outside
+## Access from the outside world
 ```shell
 k get svc
 k delete svc nginx

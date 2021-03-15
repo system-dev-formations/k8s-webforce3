@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="essai">
+  <component name="PublishConfigData" serverName="vm">
     <serverData>
-      <paths name="essai">
+      <paths name="vm">
         <serverdata>
           <mappings>
             <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />

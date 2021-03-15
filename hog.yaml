@@ -5,82 +5,6 @@ metadata:
     deployment.kubernetes.io/revision: "1"
   labels:
     app: hog
-  managedFields:
-  - apiVersion: apps/v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:labels:
-          .: {}
-          f:app: {}
-      f:spec:
-        f:progressDeadlineSeconds: {}
-        f:replicas: {}
-        f:revisionHistoryLimit: {}
-        f:selector: {}
-        f:strategy:
-          f:rollingUpdate:
-            .: {}
-            f:maxSurge: {}
-            f:maxUnavailable: {}
-          f:type: {}
-        f:template:
-          f:metadata:
-            f:labels:
-              .: {}
-              f:app: {}
-          f:spec:
-            f:containers:
-              k:{"name":"stress"}:
-                .: {}
-                f:image: {}
-                f:imagePullPolicy: {}
-                f:name: {}
-                f:resources: {}
-                f:terminationMessagePath: {}
-                f:terminationMessagePolicy: {}
-            f:dnsPolicy: {}
-            f:restartPolicy: {}
-            f:schedulerName: {}
-            f:securityContext: {}
-            f:terminationGracePeriodSeconds: {}
-    manager: kubectl-create
-    operation: Update
-    time: "2021-01-07T14:50:33Z"
-  - apiVersion: apps/v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          .: {}
-          f:deployment.kubernetes.io/revision: {}
-      f:status:
-        f:availableReplicas: {}
-        f:conditions:
-          .: {}
-          k:{"type":"Available"}:
-            .: {}
-            f:lastTransitionTime: {}
-            f:lastUpdateTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-            f:type: {}
-          k:{"type":"Progressing"}:
-            .: {}
-            f:lastTransitionTime: {}
-            f:lastUpdateTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-            f:type: {}
-        f:observedGeneration: {}
-        f:readyReplicas: {}
-        f:replicas: {}
-        f:updatedReplicas: {}
-    manager: kube-controller-manager
-    operation: Update
-    time: "2021-01-07T14:50:36Z"
   name: hog
   namespace: default
 spec:
@@ -110,21 +34,19 @@ spec:
             memory: "4Gi"
           requests:
             cpu: "0.5"
-            memory: "2500Mi"
+            memory: "500Mi"
         args:
-        - -cpus
-        - "2"
-        - -mem-total
-        - "950Mi"
-        - -mem-alloc-size
-        - "100Mi"
-        - -mem-alloc-sleep
-        - "1s"
+          - -cpus
+          - "2"
+          - -mem-total
+          - "950Mi"
+          - -mem-alloc-size
+          - "100Mi"
+          - -mem-alloc-sleep
+          - "1s"
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
-      securityContext: {}
       terminationGracePeriodSeconds: 30
-

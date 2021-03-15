@@ -6,12 +6,12 @@ spec:
   containers:
     - name: nginx
       image: nginx
-      env:
-        - name: ilike
-          valueFrom:
-            configMapKeyRef:
-              key: favorite
-              name: colors
-#      envFrom:
-#        - configMapRef:
-#            name: colors
+#      env:
+#        - name: ilike
+#          valueFrom:
+#            configMapKeyRef:
+#              key: favorite
+#              name: colors
+      envFrom:
+        - configMapRef:
+            name: colors

@@ -6,8 +6,8 @@ metadata:
 subjects:
 - kind: User
   name: DevDan
-  apiGroup: ""
+  apiGroup: "apps"
 roleRef:
-  apiGroup: ""
+  apiGroup: "apps"
   kind: Role
   name: developer

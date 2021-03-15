@@ -8,7 +8,7 @@ sudo useradd -s /bin/bash DevDan
 sudo passwd DevDan
 openssl genrsa -out DevDan.key 2048
 # commenting 
-vi /etc/ssl/openssl.cnf 
+sudo vi /etc/ssl/openssl.cnf 
 #RANDFILE = $ENV::HOME/.rnd
 openssl req -new -key DevDan.key -out DevDan.csr -subj "/CN=DevDan/O=development"
 

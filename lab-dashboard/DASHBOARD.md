@@ -5,7 +5,7 @@
 alias k = 'kubectl'
 source <( kubectl completion bash | sed s/kubectl/k/g)
 ```
-## Installation des objets Kubernetes pour le dashboard
+## Set up dashboard
 ```shell
 k apply -f recommended.yaml 
 k apply -f dashboard-adminuser.yaml
@@ -14,7 +14,7 @@ k get svc -A --watch
 ```
 
 
-## Obtenir le token de connexion au dashboard
+## Get the dashboard token
 ```shell script
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret |
     grep admin-user | awk '{print $1}' )

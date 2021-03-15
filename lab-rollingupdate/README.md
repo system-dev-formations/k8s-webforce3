@@ -1,7 +1,7 @@
   ## Rolling update
    
    ```shell script
-     k create -f curl.yaml -n kube-public  
+     k create -f curl.yaml -n kube-public  # to set up curl command
      k create -f frontend.yaml
      k create -f webapp-service.yaml    
      chmod +x curl-test.sh

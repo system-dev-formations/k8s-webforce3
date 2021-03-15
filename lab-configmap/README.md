@@ -28,7 +28,6 @@ modify script
 ```shell
 k create -f car-map.yaml
 k get cm
-k create -f simpleshell-1.yaml
 k delete pod shell-demo
 k create -f simpleshell-1.yaml
 k exec -it shell-demo -- /bin/bash -c 'df -ha | grep car'

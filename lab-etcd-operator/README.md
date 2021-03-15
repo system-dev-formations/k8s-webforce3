@@ -5,7 +5,7 @@ Nous allons cree un nouveau type d'objet Kubernetes, EtcdCluster
 
 Editez le fichier etc-operator-crd.yaml 
  ```commandline
-k create -f etc-operator-crd.yaml 
+k create -f etcd-operator-crd.yaml 
 ```
 Un simple script pour faire une entree dans le Service-Account
 ```commandline

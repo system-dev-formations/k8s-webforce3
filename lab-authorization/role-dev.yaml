@@ -4,7 +4,7 @@ metadata:
   namespace: development
   name: developer
 rules:
-- apiGroups: [""]
-  resources: ["pods", "replicasets", "deployments"]
+- apiGroups: ["apps"]
+  resources: ["pods", "replicasets", "deployment"]
   verbs: ["get","watch","list","create", "update","patch","delete"]
 

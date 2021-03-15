@@ -15,6 +15,7 @@
 
 ## ajouter un repo et installer mysql chart
 ```shell script
+     helm repo add bitnami https://charts.bitnami.com/bitnami
     helm repo add stable https://charts.helm.sh/stable
     helm search repo stable
     helm repo update
