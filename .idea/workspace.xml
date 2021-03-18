@@ -20,26 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crd/new-crontab.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/crd/new-crontab.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-authorization/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-authorization/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-authorization/role-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-authorization/role-dev.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-authorization/rolebind.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-authorization/rolebind.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-configmap/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-configmap/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-configmap/simpleshell.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-configmap/simpleshell.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-dashboard/DASHBOARD.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-dashboard/DASHBOARD.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-etcd-operator/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-etcd-operator/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-first-step/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-first-step/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-helm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-helm/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-nfs/PVol.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-nfs/PVol.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-pod/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-pod/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-rollingupdate/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-rollingupdate/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/robot-shop-stan/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/robot-shop-stan/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/second.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storageOS/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/storageOS/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +74,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210315_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210317_0000" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
