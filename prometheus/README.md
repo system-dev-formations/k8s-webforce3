@@ -8,4 +8,5 @@ Hit the following commands:
  k create -f config-map.yaml
  k create -f prometheus-deployment.yaml
  k create -f prometheus-service.yaml
+ k get svc -A
 ```

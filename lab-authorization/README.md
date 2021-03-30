@@ -21,12 +21,22 @@ k config set-context DevDan-context  --cluster=kubernetes --namespace=developmen
 k --context=DevDan-context get pods
 k config get-contexts
 
+k create -f role-dev.yaml 
+k create -f rolebind.yaml
+
+k --context=DevDan-context get pods
+k --context=DevDan-context create deployment nginx --image=nginx
+
+k create -f role-prod.yaml 
+k create -f rolebindprod.yaml
+
 k config set-context ProdDan-context  --cluster=kubernetes --namespace=production  --user=DevDan
 kubectl --context=ProdDan-context get pods
 
 k --context=ProdDan-context create deployment nginx --image=nginx
 k -n production describe role dev-prod 
 k -n development describe role developer 
+
 k --context=DevDan-context create deployment nginx --image=nginx
 
 # Admission controllers

@@ -26,6 +26,8 @@ vi report
  sudo /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml \ 
  --network-plugin=cni \
  --pod-infra-container-image=k8s.gcr.io/pause:3.2 --pod-manifest-path=/etc/kubelet.d/ &
+sudo systemctl stop kubelet
+
 ```
 
 
