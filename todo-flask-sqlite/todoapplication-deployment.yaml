@@ -3,8 +3,7 @@ kind: Deployment
 metadata:
   annotations:
     kompose.cmd: kompose convert
-    kompose.version: 1.22.0 ()
-  creationTimestamp: null
+    kompose.version: 1.22.0 (955b78124)
   labels:
     io.kompose.service: todoapplication
   name: todoapplication
@@ -19,25 +18,25 @@ spec:
     metadata:
       annotations:
         kompose.cmd: kompose convert
-        kompose.version: 1.22.0 ()
-      creationTimestamp: null
+        kompose.version: 1.22.0 (955b78124)
       labels:
         io.kompose.network/lan_network: "true"
         io.kompose.service: todoapplication
     spec:
       containers:
-        - image: todoapplication
+        - image: systemdevformations/todo-sqlite
           name: todoapplication
           ports:
             - containerPort: 5000
           resources: {}
           volumeMounts:
-            - mountPath: /tmp
-              name: todoapplication-claim0
+            - mountPath: /opt/data
+              name: sqlite-dir
       hostname: todo
       restartPolicy: Always
       volumes:
-        - name: todoapplication-claim0
+        - name: sqlite-dir
           persistentVolumeClaim:
-            claimName: todoapplication-claim0
-status: {}
+            claimName: pvc-one
+
+

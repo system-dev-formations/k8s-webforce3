@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.22.0 (955b78124)
+  labels:
+    io.kompose.service: mysqlite
+  name: mysqlite
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: mysqlite
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.22.0 (955b78124)
+      labels:
+        io.kompose.network/lan_network: "true"
+        io.kompose.service: mysqlite
+    spec:
+      containers:
+        - args:
+            - tail
+            - -f
+            - /dev/null
+          image: systemdevformations/sqlite3
+          name: mysqlite
+          resources: {}
+          volumeMounts:
+            - mountPath: /opt/data
+              name: sqlite-dir
+      hostname: sqlite
+      restartPolicy: Always
+      volumes:
+        - name: sqlite-dir
+          persistentVolumeClaim:
+            claimName: pvc-one

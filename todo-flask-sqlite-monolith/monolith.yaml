@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  name: mono
-spec:
-  containers:
-    - name: mono
-      image: systemdevformations/todo-monolith
-

@@ -1,0 +1,271 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lachaise Assignment
+% LaTeX Template
+% Version 1.0 (26/6/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Marion Lachaise & François Févotte
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\input{structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+
+
+\title{Kubernetes Unleashed } % Title of the assignment
+
+\author{Herve Meftah\\ \texttt{admin@crunchydevops.com}} % Author name and email address
+
+\date{CrunchyDevOps.com--- \today} % University, school and/or department name(s) and a date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section*{Introduction} % Unnumbered section
+
+% Math equation/formula
+%\begin{equation}
+%	I = \int_{a}^{b} f(x) \; \text{d}x.
+%\end{equation}
+%The following image depicts the Kubernetes objects involved
+%\begin{figure}[h!]
+%	\caption{kubernetes objects}
+%	\centering
+%	\includegraphics[width=\textwidth]{../screenshot/glusterfs-postgresql.jpg}
+%\end{figure}
+
+\begin{info} % Information block
+	Know which version of Kubernetes you are using.
+	% File contents
+\begin{file}[command]
+\begin{lstlisting}[language=Yaml]
+kubectl get nodes
+\end{lstlisting}
+\end{file}
+\end{info}
+
+%----------------------------------------------------------------------------------------
+%	ITEM 1
+%----------------------------------------------------------------------------------------
+
+\section{Install Prow} % Numbered section
+Prow is a Kubernetes based CI/CD system. Jobs can be triggered by various types of events and report their status to many different services.
+In addition to job execution, Prow provides GitHub automation in the form of policy enforcement, chat-ops via \texttt{/foo} style commands,
+and automatic PR merging.
+
+%------------------------------------------------
+
+\subsection{Whitespace}
+In Python, whitespace is syntactically significant. Python programmers
+are especially sensitive to the effects of whitespace on code
+clarity. Follow these guidelines related to whitespace:
+\newcommand{\localtextbulletone}{\textcolor{brown}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}}
+\renewcommand{\labelitemi}{\localtextbulletone}
+\begin{itemize}
+\item Use spaces instead of tabs for indentation.
+\item Use four spaces for each level of syntactically significant indenting.
+\item Lines should be 79 characters in length or less.
+\item Continuations of long expressions onto additional lines should
+be indented by four extra spaces from their normal indentation
+level.
+\item In a file, functions and classes should be separated by two blank
+lines.
+\item In a class, methods should be separated by one blank line.
+\item In a dictionary, put no whitespace between each key and colon,
+and put a single space before the corresponding value if it fits on
+the same line.
+\item Put one—and only one—space before and after the = operator in a
+variable assignment.
+\item For type annotations, ensure that there is no separation between
+the variable name and the colon, and use a space before the type
+information.
+\end{itemize}
+
+% Numbered question, with subquestions in an enumerate environment
+%\begin{question}
+%	Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt ultrices. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+	% Subquestions numbered with letters
+%	\begin{enumerate}[(a)]
+%		\item Do this.
+%		\item Do that.
+%		\item Do something else.
+%	\end{enumerate}
+%\end{question}
+	
+%------------------------------------------------
+
+\subsection{Naming}
+PEP 8 suggests unique styles of naming for different parts in the
+language. These conventions make it easy to distinguish which type
+corresponds to each name when reading code. Follow these guidelines
+related to naming:
+
+\begin{itemize}
+	\item Functions, variables, and attributes should be in lowercase\_
+underscore format.
+	\item Protected instance attributes should be in \_leading\_underscore
+format.
+	\item Private instance attributes should be in \_\_double\_leading\_
+underscore format.
+	\item Classes (including exceptions) should be in CapitalizedWord
+format.
+	\item Module-level constants should be in ALL\_CAPS format.
+	\item Instance methods in classes should use self, which refers to the
+object, as the name of the first parameter.
+	\item Class methods should use cls, which refers to the class, as the
+name of the first parameter.
+	\end{itemize}
+%\begin{center}
+%%		\begin{algorithm}[H]
+%			\KwIn{$(a, b)$, two floating-point numbers}  % Algorithm inputs
+%			\KwResult{$(c, d)$, such that $a+b = c + d$} % Algorithm outputs/results
+%			\medskip
+%			\If{$\vert b\vert > \vert a\vert$}{
+%				exchange $a$ and $b$ \;
+%			}
+%%%			$d \leftarrow b - z$ \;
+%			{\bf return} $(c,d)$ \;
+%			\caption{\texttt{FastTwoSum}} % Algorithm name
+%			\label{alg:fastTwoSum}   % optional label to refer to
+%		\end{algorithm}
+%	\end{minipage}
+%\end{center}
+\subsection{Expressions and Statement}
+The \textit{Zen of Python} states: “There should be one—and preferably only
+one—obvious way to do it.” PEP 8 attempts to codify this style in its
+guidance for expressions and statements:
+\begin{itemize}
+	\item Use inline negation (if a is not b) instead of negation of positive
+expressions (if not a is b).
+	\item Don’t check for empty containers or sequences (like [] or '')
+by comparing the length to zero (\texttt{if len(somelist) == 0}). Use
+\texttt{if not somelist} and assume that empty values will implicitly
+evaluate to False.
+	\item The same thing goes for non-empty containers or sequences (like
+\texttt{[1] or 'hi'}). The statement \texttt{if somelist} is implicitly True for nonempty
+values.
+	\item Avoid single-line if statements, for and while loops, and except
+compound statements. Spread these over multiple lines for
+clarity.
+	\item If you can’t fit an expression on one line, surround it with parentheses
+and add line breaks and indentation to make it easier to
+read.
+	\item Prefer surrounding multiline expressions with parentheses over
+using the \ line continuation character.
+\end{itemize}
+
+% Numbered question, with an optional title
+%\begin{question}[\itshape (with optional title)]
+%	In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
+%\end{question}
+\subsection{Imports}
+PEP 8 suggests some guidelines for how to import modules and use
+them in your code:
+\begin{itemize}
+	\item Always put  \texttt{import} statements (including  \texttt{from x import y}) at the
+top of a file.
+	\item Always use absolute names for modules when importing them, not
+names relative to the current module’s own path. For example, to
+import the  \texttt{foo} module from within the  \texttt{bar} package, you should
+use from  \texttt{bar import foo}, not just  \texttt{import foo}.
+	\item If you must do relative imports, use the explicit syntax \texttt{from . import foo}
+	\item Imports should be in sections in the following order: standard
+library modules, third-party modules, your own modules. Each
+subsection should have imports in alphabetical order.
+	\end{itemize}
+
+\begin{warn}[Note:]
+The Pylint tool (\url{https://www.pylint.org}) is a popular static analyzer for Python
+source code. Pylint provides automated enforcement of the PEP 8 style guide and
+detects many other types of common errors in Python programs. Many IDEs and
+editors also include linting tools or support similar plug-ins.
+\end{warn}
+
+\subsection{Things to Remember}
+
+\begin{itemize}
+	\item Always follow the Python Enhancement Proposal \#8 (PEP 8) style
+guide when writing Python code.
+	\item Sharing a common style with the larger Python community facilitates
+collaboration with others.
+	\item Using a consistent style makes it easier to modify your own code later.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 2
+%----------------------------------------------------------------------------------------
+
+\section{Know the differences between bytes and str}
+
+In Python, there are two types that represent sequences of character
+data: bytes and str. Instances of bytes contain raw, unsigned 8-bit
+values (often displayed in the ASCII encoding):
+
+% File contents
+\begin{file}[bytes_str.py]
+\begin{lstlisting}[language=Python]
+a = b'h\x65llo'
+print(list(a))
+print(a)
+>>>
+[104, 101, 108, 108, 111]
+b'hello'
+\end{lstlisting}
+\end{file}
+
+Fusce eleifend porttitor arcu, id accumsan elit pharetra eget. Mauris luctus velit sit amet est sodales rhoncus. Donec cursus suscipit justo, sed tristique ipsum fermentum nec. Ut tortor ex, ullamcorper varius congue in, efficitur a tellus. Vivamus ut rutrum nisi. Phasellus sit amet enim efficitur, aliquam nulla id, lacinia mauris. Quisque viverra libero ac magna maximus efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum mollis eros in tellus fermentum, vitae tristique justo finibus. Sed quis vehicula nibh. Etiam nulla justo, pellentesque id sapien at, semper aliquam arcu. Integer at commodo arcu. Quisque dapibus ut lacus eget vulputate.
+
+% Command-line "screenshot"
+\begin{commandline}
+	\begin{verbatim}
+		$ chmod +x hello.py
+		$ ./hello.py
+
+		Hello World!
+	\end{verbatim}
+\end{commandline}
+
+Vestibulum sodales orci a nisi interdum tristique. In dictum vehicula dui, eget bibendum purus elementum eu. Pellentesque lobortis mattis mauris, non feugiat dolor vulputate a. Cras porttitor dapibus lacus at pulvinar. Praesent eu nunc et libero porttitor malesuada tempus quis massa. Aenean cursus ipsum a velit ultricies sagittis. Sed non leo ullamcorper, suscipit massa ut, pulvinar erat. Aliquam erat volutpat. Nulla non lacus vitae mi placerat tincidunt et ac diam. Aliquam tincidunt augue sem, ut vestibulum est volutpat eget. Suspendisse potenti. Integer condimentum, risus nec maximus elementum, lacus purus porta arcu, at ultrices diam nisl eget urna. Curabitur sollicitudin diam quis sollicitudin varius. Ut porta erat ornare laoreet euismod. In tincidunt purus dui, nec egestas dui convallis non. In vestibulum ipsum in dictum scelerisque.
+
+% Warning text, with a custom title
+\begin{warn}[Notice:]
+  In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
+\end{warn}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

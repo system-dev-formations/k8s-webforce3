@@ -3,17 +3,17 @@ kind: Service
 metadata:
   annotations:
     kompose.cmd: kompose convert
-    kompose.version: 1.22.0 ()
-  creationTimestamp: null
+    kompose.version: 1.22.0 (955b78124)
   labels:
     io.kompose.service: todoapplication
   name: todoapplication
 spec:
+  type: NodePort
   ports:
-    - name: "5000"
-      port: 5000
+    - name: "25000"
+      port: 25000
       targetPort: 5000
+      nodePort: 30007
   selector:
     io.kompose.service: todoapplication
-status:
-  loadBalancer: {}
+

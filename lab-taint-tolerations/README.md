@@ -11,51 +11,75 @@ any pods that do not tolerate the taints.
 Three sort of taints : Noschedule, PreferNoSchedule and NoExecute
 
 ```shell
-# check 
+# pre-requisites
+docker ps | wc -l
+cd lab-taint-tolerations
+k get pod
+k create -f taint.yaml 
+k get pod
+k get pod -o wide
+# Check master , and nodes
+docker ps | wc -l
+k delete -f taint.yaml 
+# Check master , and nodes
+docker ps | wc -l
+
 
 ```
 # Commands 
 ```shell
  k get node
- k taint nodes master  bubba=value:PreferNoSchedule
+ k get pod 
+ k taint nodes k8s-teacher-node-1 bubba=value:PreferNoSchedule
+ k describe node | grep Taint
+ k create -f taint.yaml 
+k get pod
+k get pod -o wide
+docker ps | wc -l
 ```
 
-k create -f taint.yaml
-k get pod -o wide
+```shell
 k delete -f taint.yaml
-
+k taint nodes k8s-teacher-node-1 bubba-
+k create -f taint.yaml 
 k get pod
-k taint nodes afip-k8s-master-ref bubba=value:PreferNoSchedule
-k describe nodes | grep Taint
-k create -f taint.yaml
-k get pod -o wide
+k get pod -o wide 
+docker ps | wc -l
+k taint nodes k8s-teacher-node-1 bubba=value:NoSchedule
+k edit deployments.apps taint-deployment
+# change replica to 10  
+```
+## Eviction 
+k taint nodes k8s-teacher-node-1 bubba-
+k taint nodes k8s-teacher-node-1 bubba=value:NoExecute
+
+## back
 k delete -f taint.yaml
-k taint nodes afip-k8s-master-ref bubba-
-k describe nodes | grep Taint
-k describe nodes | grep Taint
+k taint nodes k8s-teacher-node-1 bubba-
+
+## drain 
+k drain k8s-teacher-node-1
+k get nodes
+
+# uncordon 
+k uncordon k8s-teacher-node-1
+
+## Declarative command
+```shell
+docker ps | wc -l 
+k get nodes 
+k label nodes k8s-teacher-master status=vip
+k get nodes --show-labels
+k label nodes k8s-teacher-node-1 status=other
+k get nodes --show-labels
+k create -f vip.yaml
+docker ps | wc -l
 k get pod -o wide
-k taint nodes afip-k8s-node1-ref bubba=value:NoSchedule
-k create -f taint.yaml
-k get pod -o wide
-k delete -f taint.yaml
-k taint nodes afip-k8s-node1-ref bubba-
-k taint nodes afip-k8s-node1-ref bubba=value:NoExecute
-k get pod -o wide
-k taint nodes afip-k8s-node1-ref bubba-
-k get pod -o wide
-k create -f taint.yaml
-k get pod -o wide
-k drain afip-k8s-node1-ref
-k get pod -o wide
-k drain afip-k8s-node1-ref
-k get pod -o wide
-k delete -f taint.yaml
-k create -f taint.yaml
-k get pod -o wide
-k create -f taint.yaml
-k get pod -o wide
-k delete  -f taint.yaml
-k uncordon afip-k8s-node1-ref
-k create -f taint.yaml
-k get pod -o wide
+# comment line 
+k create -f vip.yaml
+docker ps | wc -l
+k create -f other.yaml
+docker ps | wc -l
+```
+
 

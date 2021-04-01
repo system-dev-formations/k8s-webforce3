@@ -19,7 +19,7 @@ k create -f nfs-xfs.yaml
 k -n rook-nfs get nfsservers.nfs.rook.io
 k -n rook-nfs get pod -l app=rook-nfs
 k create -f sc.yaml 
-k create -f pvc.yaml  
+k create -f mysqlite-pvc.yaml  
 k create -f busybox-rc.yaml 
 k create -f web-rc.yaml 
 k  get pod -l app=nfs-demo -w

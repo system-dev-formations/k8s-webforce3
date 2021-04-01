@@ -1,34 +1,34 @@
 # Lab-NFS
 
 ```shell
-sudo apt-get update 
-sudo apt-get install -y nfs-kernel-server
-sudo mkdir /opt/sfw
-sudo chmod 1777 /opt/sfw
-sudo bash -c 'echo software > /opt/sfw/hello.txt'
-```
-Add a line in /etc/exports
+sudo apt-get update   # update package
+sudo apt-get install -y nfs-kernel-server  # install nfs packages
+sudo mkdir /opt/sfw   # create shared directory
+sudo chmod 1777 /opt/sfw   # change to executable mode
+sudo bash -c 'echo software > /opt/sfw/hello.txt'  # create a test file
+#Add a line in /etc/exports  
 sudo vi /etc/exports
 /opt/sfw/  *(rw,sync,no_root_squash,subtree_check)
+sudo exportfs -ra   # reload for the change takes effect
+```
 
-sudo exportfs -ra
-
-Install nfs on the node1
+## Install nfs on the node1
 ```shell
-sudo apt-get -y install nfs-common
-showmount -e <master_address_ip>
+sudo apt-get update 
+sudo apt-get -y install nfs-common  # add  nfs clien package
+showmount -e <master_address_ip>   # check whether the shared mount works
 ```
 see all scripts
 ```shell
-k create -f PVol.yaml
-k get pv
-k get pvc
-k create -f pvc.yaml
-k get pvc
-k create -f nfs-pod.yaml
-k get pods
-k describe pod nginx-xxxxx
-k get pvc
+k create -f mysqlite-pv.yaml   # create a persistentvolume
+k get pv     # check persistentVolume
+k get pvc    # check persistentVolumeClaim 
+k create -f mysqlite-pvc.yaml   # create a persistentvolume
+k get pvc   # Check 
+k create -f nfs-pod.yaml  # install a pod connected to the pvc
+k get pods    # Check 
+k describe pod nginx-xxxxx  # verify 
+k get pvc   # check 
 ```
 ## Resource Quota
 ```shell
@@ -37,9 +37,9 @@ k delete pvc pvc-one
 k delete pv pvvol-1 
 k create namespace small
 k describe ns small 
-k -n small create PVol.yaml 
-k -n small create -f PVol.yaml 
-k -n small create -f pvc.yaml 
+k -n small create mysqlite-pv.yaml 
+k -n small create -f mysqlite-pv.yaml 
+k -n small create -f mysqlite-pvc.yaml 
 
 k -n small create -f storage-quota.yaml 
 k describe ns small
@@ -61,11 +61,11 @@ k -n small delete pvc pvc-one
 k -n small get pv 
 # see the status set to released
 k -n small delete pv pvvol-1 
-k create -f PVol.yaml 
+k create -f mysqlite-pv.yaml 
 kubectl patch pv pvvol-1 -p {"spec":{"persistentVolumeReclaimPolicy":"Delete"}}
 # see reclain policy is set to Delete
 k describe ns small
-k -n small create -f pvc.yaml
+k -n small create -f mysqlite-pvc.yaml
 k describe ns small
 k -n small delete resourcequotas storagequota
 k describe ns small
