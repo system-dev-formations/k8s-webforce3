@@ -4,4 +4,4 @@ metadata:
   name: new-cron-object
 spec:
   cronSpec: "*/5 * * * *"
-  image: xordiv/docker-alpine-cron
+  image: xordiv/docker-debian-cron

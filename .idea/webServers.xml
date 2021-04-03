@@ -10,7 +10,7 @@
         </fileTransfer>
       </webServer>
       <webServer id="52e77a30-0a83-45e6-ab9d-8ed6f7e37ff0" name="vm_test">
-        <fileTransfer accessType="SFTP" host="170.75.175.198" port="22" sshConfigId="8b76cf8b-9725-4547-8d16-8f33a5f154f2" sshConfig="vm_test" keyPair="true">
+        <fileTransfer accessType="SFTP" host="170.75.175.198" port="22" sshConfigId="8b76cf8b-9725-4547-8d16-8f33a5f154f2" sshConfig="vm_test">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
@@ -18,6 +18,13 @@
       </webServer>
       <webServer id="aaa402be-320d-4225-9a69-988bbfcd00a0" name="vm_node">
         <fileTransfer accessType="SFTP" host="170.75.170.89" port="22" sshConfigId="9134949f-5be6-4155-a917-6d7c9204440e" sshConfig="vm_node">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="dbe80170-796f-4821-8e76-889d053c993b" name="vm_tesT_node">
+        <fileTransfer accessType="SFTP" host="170.75.170.125" port="22" sshConfigId="f897b965-63dc-4960-8bcf-a169ae871c11" sshConfig="vm_tesT_node">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

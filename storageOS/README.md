@@ -47,7 +47,7 @@ kubectl -n kube-system run \
 
 Create a PVC
 ```shell
-k create -f storageos-mysqlite-pvc.yaml
+k create -f storageos-mypostgres-pvc.yaml
 kubectl -n kube-system exec -it cli -- storageos get volumes
 ```
 

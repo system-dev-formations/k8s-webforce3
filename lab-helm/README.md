@@ -21,7 +21,7 @@
     helm repo update
     k create -f mysqldb-hostpath.yaml
     k get pv
-    k create -f mysqldb-mysqlite-pvc.yaml
+    k create -f mysqldb-mypostgres-pvc.yaml
     k get pvc
     helm install  mysql --set mysqlRootPassword=rootpassword,mysqlUser=mysql,mysqlPassword=my-password,mysqlDatabase=mydatabase,persistence.existingClaim=mysql-pvc stable/mysql
     k get pod

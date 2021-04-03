@@ -7,7 +7,9 @@ RUN set -ex \
     python3 \
     python3-dev \
     curl \
-    sqlite \
+    gcc \
+    libc-dev \
+    build-base \
  && pip3 install --no-cache-dir --upgrade pip
 
 ADD templates /opt/templates
@@ -17,10 +19,14 @@ RUN pip3 install -r requirements.txt && \
 
 COPY todo.py /opt
 COPY todo.cfg /opt
-COPY todos.sql /opt
-RUN  cd /opt && cat todos.sql | sqlite3 tododb.db
+COPY sql/todos.sql /opt/data
 
-VOLUME /opt
+VOLUME /opt/data
 
 ENTRYPOINT FLASK_APP=/opt/todo.py flask run --host=0.0.0.0
+
+
+
+
+
 

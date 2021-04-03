@@ -20,10 +20,10 @@ showmount -e <master_address_ip>   # check whether the shared mount works
 ```
 see all scripts
 ```shell
-k create -f mysqlite-pv.yaml   # create a persistentvolume
+k create -f mypostgres-pv.yaml   # create a persistentvolume
 k get pv     # check persistentVolume
 k get pvc    # check persistentVolumeClaim 
-k create -f mysqlite-pvc.yaml   # create a persistentvolume
+k create -f mypostgres-pvc.yaml   # create a persistentvolume
 k get pvc   # Check 
 k create -f nfs-pod.yaml  # install a pod connected to the pvc
 k get pods    # Check 
@@ -37,9 +37,9 @@ k delete pvc pvc-one
 k delete pv pvvol-1 
 k create namespace small
 k describe ns small 
-k -n small create mysqlite-pv.yaml 
-k -n small create -f mysqlite-pv.yaml 
-k -n small create -f mysqlite-pvc.yaml 
+k -n small create mypostgres-pv.yaml 
+k -n small create -f mypostgres-pv.yaml 
+k -n small create -f mypostgres-pvc.yaml 
 
 k -n small create -f storage-quota.yaml 
 k describe ns small
@@ -61,11 +61,11 @@ k -n small delete pvc pvc-one
 k -n small get pv 
 # see the status set to released
 k -n small delete pv pvvol-1 
-k create -f mysqlite-pv.yaml 
+k create -f mypostgres-pv.yaml 
 kubectl patch pv pvvol-1 -p {"spec":{"persistentVolumeReclaimPolicy":"Delete"}}
 # see reclain policy is set to Delete
 k describe ns small
-k -n small create -f mysqlite-pvc.yaml
+k -n small create -f mypostgres-pvc.yaml
 k describe ns small
 k -n small delete resourcequotas storagequota
 k describe ns small

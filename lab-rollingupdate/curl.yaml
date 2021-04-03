@@ -10,4 +10,4 @@ spec:
     - "5000"
     image: byrnedo/alpine-curl:latest
     imagePullPolicy: Always
-    name: alpine-curl
+    name: debian-curl

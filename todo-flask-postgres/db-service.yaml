@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.22.0 (955b78124)
+  labels:
+    io.kompose.service: db
+  name: db
+spec:
+  type: NodePort
+  ports:
+    - name: "26432"
+      port: 26432
+      targetPort: 5432
+      nodePort: 30010
+  selector:
+    io.kompose.service: db
