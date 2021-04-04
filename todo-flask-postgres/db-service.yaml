@@ -10,8 +10,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - name: "26432"
-      port: 26432
+    - name: "5432"
+      port: 5432
       targetPort: 5432
       nodePort: 30010
   selector:
