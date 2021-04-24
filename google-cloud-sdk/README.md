@@ -18,23 +18,24 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
  k get nodes
 ```
 
-Connect using ssh to a node
+Connect using ssh to a node  
 ```shell script
  gcloud compute ssh gke-prow-crunchydevops-default-pool-6b1cbaba-cw2b
 ```
 
-Stop the cluster 
+Stop the cluster   
 ```shell script
  gcloud container clusters resize cluster-x --num-nodes=0 --zone europe-west1-b
 ```
 
-Set kubectl credentials to a specific cluster
+Set kubectl credentials to a specific cluster  
 ```shell script
  gcloud container clusters get-credentials cluster-x
 ```
 
-## Google-cloud sdk on Ubuntu
+## Google-cloud sdk on Ubuntu  
 ```shell
+sudo apt update
 sudo snap install google-cloud-sdk  --classic
 gcloud auth login
 gcloud config set project platinum-219712

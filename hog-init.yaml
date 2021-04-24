@@ -28,7 +28,7 @@ spec:
       containers:
       - image: vish/stress
         imagePullPolicy: Always
-        name: stress
+        name: lab-stress
         resources:
           limits:
             memory: "4Gi"

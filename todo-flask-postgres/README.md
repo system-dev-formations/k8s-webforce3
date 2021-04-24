@@ -12,6 +12,7 @@ sudo exportfs -ra   # reload for the change takes effect
 ## Set up postgresql on a PersistentVolume
 ```shell
 k create -f lan_network-networkpolicy.yaml
+# change the serve IP address in the following file before proceding
 k create -f mypostgres-pv.yaml
 k get pv
 k create -f mypostgres-pvc.yaml
@@ -22,3 +23,9 @@ k create -f db-service.yaml
 k get svc 
 ```
 ## Set up the database using JetBrains Goland
+CREATE DATABASE tododb;  
+and execute sql/todos.sql script  
+
+## install pgadmin4
+k create -f pgadmin-deployment.yaml
+k create -f pgadmin-service.yaml

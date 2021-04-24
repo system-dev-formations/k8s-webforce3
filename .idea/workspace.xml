@@ -20,8 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lab-deployment/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-stress/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/minikube/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-flask-postgres/db-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/todo-flask-postgres/db-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car-map.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnat/cnat-client-go/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cnat/cnat-client-go/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crd/crd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-crd/crd.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crd/new-crontab.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-crd/new-crontab.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment-nginx.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-cloud-sdk/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/google-cloud-sdk/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hog-init.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hog-init.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-deployment/nginx-with-port.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-etcd-operator/etcd-operator-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-etcd-operator/etcd-operator-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/low-resource-range.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-stress/low-resource-range.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pod-definition.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/second.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stress/hog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-stress/hog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-flask-postgres/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/todo-flask-postgres/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-flask-postgres/db-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/todo-flask-postgres/db-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-flask-postgres/lan_network-networkpolicy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/todo-flask-postgres/lan_network-networkpolicy.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-flask-postgres/mypostgres-pv.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/todo-flask-postgres/mypostgres-pv.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-flask-postgres/postgresql12/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/todo-flask-postgres/postgresql12/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +99,11 @@
     <property name="ACTIVE_CLOUD_PROJECT_NAME" value="platinum" />
     <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="163794452303" />
     <property name="DatabaseDriversLRU" value="mysql&#10;postgresql" />
-    <property name="RunConfigurationTargetLRU" value="&#10;fb01b22b-9062-4799-892f-825f0a1bb70c/database/&quot;tododb&quot;" />
+    <property name="RunConfigurationTargetLRU" value="&#10;fb01b22b-9062-4799-892f-825f0a1bb70c/database/&quot;tododb&quot;&#10;ded10d13-5b1a-4eb5-8f8c-60145da7f79b/database/&quot;tododb&quot;&#10;e9cabf21-3846-48aa-9c82-edc5db6e12c0/database/&quot;tododb&quot;" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210404_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210413_0000" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -88,7 +114,7 @@
     <property name="go.tried.to.enable.integration.dep.integrator" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/todo-flask-postgres" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../docker/postgres4k8s" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -107,11 +133,11 @@
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\storageOS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\lab-stress" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\todo-flask-initcontainers\flask" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\todo-flask-sqlite-monolith" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\lab-dashboard" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3" />
-      <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\lab-rollingupdate" />
     </key>
   </component>
   <component name="RemoteSynchronizer">
@@ -127,15 +153,15 @@
     <configuration name="todos.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/todo-flask-postgres/sql/todos.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="fb01b22b-9062-4799-892f-825f0a1bb70c" namespace="database/&quot;tododb&quot;" />
+      <data-source id="e9cabf21-3846-48aa-9c82-edc5db6e12c0" namespace="database/&quot;tododb&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="k8s-webforce3" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/basic02/main.go" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/basic02/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="effective_python" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" temporary="true">

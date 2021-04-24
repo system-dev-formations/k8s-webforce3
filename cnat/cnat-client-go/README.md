@@ -25,7 +25,7 @@ $ ./cnat-controller -kubeconfig=$HOME/.kube/config
 $ ./hack/update-codegen.sh
 
 # register At custom resource definition:
-$ kubectl apply -f artifacts/examples/cnat-crd.yaml
+$ kubectl apply -f artifacts/examples/cnat-lab-crd.yaml
 
 # create an At custom resource:
 $ kubectl apply -f artifacts/examples/cnat-example.yaml

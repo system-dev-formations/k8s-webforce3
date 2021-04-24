@@ -44,7 +44,7 @@
 ```
 ## CPU and Limits
 ```shell script
-  kubectl create deployment hog --image vish/stress
+  kubectl create deployment hog --image vish/lab-stress
    k get deployment hog
   k describe deployment hog
    kubectl get deployment hog --export -o yaml > hog.yaml
@@ -62,7 +62,7 @@
    k  --namespace=low-usage-limit create -f low-resource-range.yaml
    k get LimitRange
    k get LimitRange -A
-   k -n low-usage-limit create deployment limited-hog --image vish/stress
+   k -n low-usage-limit create deployment limited-hog --image vish/lab-stress
    kubectl -n low-usage-limit get pods
    k -n low-usage-limit get pod limited-hog-xxxxx -o yaml
    k get rs

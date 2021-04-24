@@ -4,8 +4,8 @@ metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
   labels:
-    app: nginx
-  name: nginx
+    app: hog
+  name: hog
   namespace: default
 spec:
   progressDeadlineSeconds: 600
@@ -13,7 +13,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: nginx
+      app: hog
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -21,16 +21,30 @@ spec:
     type: RollingUpdate
   template:
     metadata:
+      creationTimestamp: null
       labels:
-        app: nginx
+        app: hog
     spec:
       containers:
-      - image: nginx
+      - image: vish/stress
         imagePullPolicy: Always
-        name: nginx
-        ports:
-          - containerPort: 80
-            protocol: TCP
+        name: lab-stress
+        resources:
+          limits:
+            cpu: "1"
+            memory: "4Gi"
+          requests:
+            cpu: "0.5"
+            memory: "500Mi"
+        args:
+          - -cpus
+          - "2"
+          - -mem-total
+          - "950Mi"
+          - -mem-alloc-size
+          - "100Mi"
+          - -mem-alloc-sleep
+          - "1s"
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst

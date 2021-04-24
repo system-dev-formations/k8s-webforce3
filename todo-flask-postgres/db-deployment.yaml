@@ -33,7 +33,7 @@ spec:
             - containerPort: 5432
           resources: {}
           volumeMounts:
-            - mountPath: /opt/pos
+            - mountPath: /var/lib/postgresql/data
               name: db
       hostname: postgres
       restartPolicy: Always
