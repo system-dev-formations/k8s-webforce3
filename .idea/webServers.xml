@@ -3,16 +3,23 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="67d8692c-cce4-4f1b-8d42-f05560ace48b" name="vm-master">
-        <fileTransfer accessType="SFTP" host="170.75.170.200" port="22" sshConfigId="414767d1-990d-4201-a8d9-e06f549617d5" sshConfig="vm-master">
+        <fileTransfer accessType="SFTP" host="172.81.178.56" port="22" sshConfigId="414767d1-990d-4201-a8d9-e06f549617d5" sshConfig="vm-master">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
       <webServer id="576ae0ff-c53f-42f4-beab-a23a20984080" name="vm-node">
-        <fileTransfer accessType="SFTP" host="172.81.177.91" port="22" sshConfigId="7c4b5197-bc56-4ad3-a776-c4f95599f9dc" sshConfig="vm-node">
+        <fileTransfer accessType="SFTP" host="172.81.181.18" port="22" sshConfigId="7c4b5197-bc56-4ad3-a776-c4f95599f9dc" sshConfig="vm-node">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="1975b193-4082-43e0-ac67-5d2a6d0d8981" name="vm_jenkins">
+        <fileTransfer accessType="SFTP" host="170.75.170.206" port="22" sshConfigId="366a35bb-0ef4-4569-91b9-4c376223f746" sshConfig="vm_jenkins" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>

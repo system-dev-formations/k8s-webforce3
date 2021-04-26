@@ -1,11 +1,12 @@
 # Lab-NFS
 
 ```shell
+# deploy first
 sudo apt-get update   # update package
 sudo apt-get install -y nfs-kernel-server  # install nfs packages
 sudo mkdir /opt/sfw   # create shared directory
 sudo chmod 1777 /opt/sfw   # change to executable mode
-sudo bash -c 'echo software > /opt/sfw/hello.txt'  # create a test file
+sudo bash -c 'echo software > /opt/sfw/hello.txt'  # create a dummy file
 #Add a line in /etc/exports  
 sudo vi /etc/exports
 /opt/sfw/  *(rw,sync,no_root_squash,subtree_check)
@@ -15,20 +16,21 @@ sudo exportfs -ra   # reload for the change takes effect
 ## Install nfs on the node1
 ```shell
 sudo apt-get update 
-sudo apt-get -y install nfs-common  # add  nfs clien package
+sudo apt-get -y install nfs-common  # add  nfs client package
 showmount -e <master_address_ip>   # check whether the shared mount works
 ```
 see all scripts
 ```shell
-k create -f mypostgres-pv.yaml   # create a persistentvolume
+# Go on the master 
+# BEWARE:  change the server ip address beforehand
+k create -f PVol.yaml   # create a persistentvolume
 k get pv     # check persistentVolume
 k get pvc    # check persistentVolumeClaim 
-k create -f mypostgres-pvc.yaml   # create a persistentvolume
+k create -f pvc.yaml   # create a persistentvolume
 k get pvc   # Check 
 k create -f nfs-pod.yaml  # install a pod connected to the pvc
 k get pods    # Check 
-k describe pod nginx-xxxxx  # verify 
-k get pvc   # check 
+k describe pod nginx-xxxxx  # verify  
 ```
 ## Resource Quota
 ```shell
@@ -37,9 +39,8 @@ k delete pvc pvc-one
 k delete pv pvvol-1 
 k create namespace small
 k describe ns small 
-k -n small create mypostgres-pv.yaml 
-k -n small create -f mypostgres-pv.yaml 
-k -n small create -f mypostgres-pvc.yaml 
+k -n small create PVol.yaml  
+k -n small create -f pvc.yaml 
 
 k -n small create -f storage-quota.yaml 
 k describe ns small
@@ -61,15 +62,13 @@ k -n small delete pvc pvc-one
 k -n small get pv 
 # see the status set to released
 k -n small delete pv pvvol-1 
-k create -f mypostgres-pv.yaml 
+k create -f PVol.yaml 
 kubectl patch pv pvvol-1 -p {"spec":{"persistentVolumeReclaimPolicy":"Delete"}}
-# see reclain policy is set to Delete
+# see the reclaim policy is set to Delete
 k describe ns small
-k -n small create -f mypostgres-pvc.yaml
+k -n small create -f pvc.yaml
 k describe ns small
 k -n small delete resourcequotas storagequota
 k describe ns small
 k -n small  create -f nfs-pod.yaml
-
-
 ```
