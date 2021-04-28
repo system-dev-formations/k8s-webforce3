@@ -8,12 +8,10 @@ metadata:
     io.kompose.service: todoapplication
   name: todoapplication
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
-    - name: "25000"
-      port: 25000
-      targetPort: 5000
-      nodePort: 30007
+    - name: "port"
+      port: 5000
   selector:
     io.kompose.service: todoapplication
 

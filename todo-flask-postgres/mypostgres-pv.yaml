@@ -11,5 +11,5 @@ spec:
   #storageClassName: standard
   nfs:
     path: /opt/postgres
-    server: 172.16.0.19
+    server: 172.81.178.56
     readOnly: false

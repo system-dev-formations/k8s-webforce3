@@ -1,8 +1,8 @@
 # Lab-deployment
 ## Pre-requis ajoutez ces lignes dans votre .bashrc
 ```shell
-alias k='kubectl'
-source <( kubectl completion bash | sed s/kubectl/k/g)
+alias k='kubectl'  # alias
+source <( kubectl completion bash | sed s/kubectl/k/g) # completion sur les objets kubernetes
 ```
 ## Deployment
 ```shell
@@ -74,7 +74,7 @@ k scale deployment nginx --replicas=0
 ## Access from outside the cluster
 ```shell
 k get po 
-k exec nginx-xxxx --printenv | grep KUBERNETES
+k exec nginx-xxxx -- printenv | grep KUBERNETES
 k get svc
 k delete svc nginx
 k expose deployment nginx --type=LoadBalancer

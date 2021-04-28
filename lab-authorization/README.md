@@ -37,8 +37,6 @@ k --context=ProdDan-context create deployment nginx --image=nginx
 k -n production describe role dev-prod 
 k -n development describe role developer 
 
-k --context=DevDan-context create deployment nginx --image=nginx
-
 # Admission controllers
 ```
 sudo grep admission /etc/kubernetes/manifests/kube-apiserver.yaml

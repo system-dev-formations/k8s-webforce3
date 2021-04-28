@@ -22,7 +22,7 @@ COPY todo.cfg /opt
 COPY sql/todos.sql /opt/data
 
 VOLUME /opt/data
-
+EXPOSE 5000
 ENTRYPOINT FLASK_APP=/opt/todo.py flask run --host=0.0.0.0
 
 

@@ -27,7 +27,7 @@ spec:
         - env:
             - name: POSTGRES_PASSWORD
               value: password
-          image: systemdevformations/postgres12
+          image: systemdevformations/docker-postgres12
           name: db
           ports:
             - containerPort: 5432

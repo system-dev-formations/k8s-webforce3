@@ -27,6 +27,7 @@ vi report
  --network-plugin=cni \
  --pod-infra-container-image=k8s.gcr.io/pause:3.2 --pod-manifest-path=/etc/kubelet.d/ &
 sudo systemctl stop kubelet
+sudo sh report
 
 ```
 
