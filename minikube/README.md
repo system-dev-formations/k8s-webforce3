@@ -3,13 +3,20 @@
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64   && chmod +x minikube
 sudo mv minikube /usr/local/bin
 sudo apt-get install -y conntrack
+sudo -s
 root@xxx:/usr/sbin# cd /usr/bin/
 root@xxx:/usr/bin# ln -s /usr/sbin/conntrack conntrack
-minikube start --cpus=4 --memory=4g addons=ingress  --driver=none
+exit
+minikube start --cpus=2 --memory=2g addons=ingress  --driver=none
 ## minikube start --nodes 2 -p multinode-demo
 minikube kubectl get nodes
 minikube kubectl get pods
 minikube status
+```
+
+## installation d'awx Ansible
+
+```shell
 minikube kubectl -- apply -f https://raw.githubusercontent.com/ansible/awx-operator/devel/deploy/awx-operator.yaml
 mkdir  minikube-awx
 cd minikube-awx

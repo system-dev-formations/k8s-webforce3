@@ -26,7 +26,7 @@ Allez dans le menu Status --> Targets
 ## Installer Grafana 
 ```shell script
     k create -f grafana-datasource-config.yaml 
-    k create -f deployement.yaml
+    k create -f deployment.yaml
     k create -f service.yaml
 ```
 User name :  admin  Mot de passe: admin  

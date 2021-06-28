@@ -14,9 +14,14 @@ sudo chmod +x /usr/local/bin/argocd
 argocd version 
 ```
 
-## Get Argo CD Password , user is admin
+## Get Argo CD Password , user is admin and set the password admin 
 ```shell
-kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server -o name | cut -d'/' -f 2
+kubectl -n argocd patch secret argocd-secret -p '{"stringData": {
+"admin.password": "$2a$10$fulVqTM1sbnreOjh9NemLepWXW4ZPCjP/LjfAJ4aHL2JWVXL8OLVe",
+"admin.passwordMtime": "'$(date +%FT%T%Z)'"
+}}'
+
+# kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server -o name | cut -d'/' -f 2
 ```
 
 ## apply the project
@@ -47,7 +52,7 @@ sudo curl -sfL -o /usr/local/bin/kyml https://github.com/frigus02/kyml/releases/
 && sudo chmod +x /usr/local/bin/kyml
 ```
 ## Convert the preview.yaml file
-```
+```shell
 source exports
 cat preview.yaml | kyml tmpl -e REPO -e APP_ID -e IMAGE_TAG -e HOSTNAME \ 
 | tee ~/argocd-previews/helm/templates/$APP_ID.yaml

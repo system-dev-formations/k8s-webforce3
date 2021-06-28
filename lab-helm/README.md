@@ -15,13 +15,13 @@
 
 ## ajouter un repo et installer mysql chart
 ```shell script
-     helm repo add bitnami https://charts.bitnami.com/bitnami
+    helm repo add bitnami https://charts.bitnami.com/bitnami
     helm repo add stable https://charts.helm.sh/stable
     helm search repo stable
     helm repo update
     k create -f mysqldb-hostpath.yaml
     k get pv
-    k create -f mysqldb-mypostgres-pvc.yaml
+    k create -f mysqldb-pvc.yaml
     k get pvc
     helm install  mysql --set mysqlRootPassword=rootpassword,mysqlUser=mysql,mysqlPassword=my-password,mysqlDatabase=mydatabase,persistence.existingClaim=mysql-pvc stable/mysql
     k get pod
@@ -41,3 +41,5 @@
      mysql -h 127.0.0.1 -P 3306 -u root -p
 ``` 
 
+# Troubleshooting if helm failed 
+alias helm='docker run -e KUBECONFIG="/root/.kube/config:/root/.kube/some-other-context.yaml" -ti --rm -v $(pwd):/apps -v ~/.kube:/root/.kube -v ~/.helm:/root/.helm alpine/helm'

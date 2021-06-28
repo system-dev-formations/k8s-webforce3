@@ -17,3 +17,4 @@ spec:
   selector:
     io.kompose.service: pgadmin
 
+

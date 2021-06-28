@@ -23,7 +23,7 @@ cd
 git clone https://github.com/coreos/etcd-operator.git
 k create namespace $NAMESPACE
 cd etcd-operator/example/rbac/
-./create-role.sh
+./create_role.sh
 cd ~/k8s-webforce3/storageOS
 k -n $NAMESPACE create -f deployment.yaml
 k -n $NAMESPACE create -f etcd-resource.yaml
@@ -47,7 +47,7 @@ kubectl -n kube-system run \
 
 Create a PVC
 ```shell
-k create -f storageos-mypostgres-pvc.yaml
+k create -f storageos-pvc.yaml
 kubectl -n kube-system exec -it cli -- storageos get volumes
 ```
 
@@ -56,7 +56,7 @@ Create a Pod
 k create -f storageos-example-pod.yaml
 k get pod d1 -w
 Crtl-c
-k exec -it d1 -- bash
+
 echo Hello world! > /mnt/hello
 cat /mnt/hello
 exit

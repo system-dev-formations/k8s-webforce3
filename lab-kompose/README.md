@@ -4,9 +4,10 @@ Kompose est un outil de conversion de docker-compose vers Kubernetes.
 ## install Kompose a partir des sources
 ```shell
 wget https://github.com/kubernetes/kompose/archive/v1.22.0.tar.gz
+tar -zxvf v1.22.0.tar.gz
 cd kompose-1.22.0/
 make
-sudo kompose /usr/local/bin
+sudo cp kompose /usr/local/bin
 kompose version
 ```
 ## install Kompose a partir du binaire
@@ -19,8 +20,10 @@ sudo mv ./kompose /usr/local/bin/kompose
 ## Obtenir un projet contenant un docker compose
 ```shell
 cd
-git clone   https://github.com/<repo_perso>/todo-flask-sqlite.git
-cd todo-flask-sqlite
+git clone   https://github.com/<repo_perso>/todo-flask-postgresql.git
+cd todo-flask-postgresql
+mkdir k8s
+cd k8s
 kompose version
-kompose convert
+kompose -f ../docker-compose.yml convert
 ```

@@ -6,7 +6,7 @@ spec:
   containers:
     - name: nginx
       image: nginx
-#      env:
+#     env:
 #        - name: ilike
 #          valueFrom:
 #            configMapKeyRef:

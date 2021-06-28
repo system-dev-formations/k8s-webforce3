@@ -23,6 +23,20 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="bbb4a9f4-a843-42de-a29f-012940c172d7" name="skaffold-master">
+        <fileTransfer accessType="SFTP" host="170.75.170.145" port="22" sshConfigId="e3e15557-f5aa-4fca-9704-c5466b774f44" sshConfig="skaffold-master">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="c8723942-ef96-4dc7-8857-13645e69f3fc" name="vmcampus">
+        <fileTransfer accessType="SFTP" host="170.75.170.254" port="22" sshConfigId="a992d68f-ed76-49f0-a7a6-53cb6b0d7b59" sshConfig="vmcampus">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
