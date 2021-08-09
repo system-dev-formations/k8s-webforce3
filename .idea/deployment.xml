@@ -1,36 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="vmcampus">
+  <component name="PublishConfigData" serverName="master-k8s">
     <serverData>
-      <paths name="skaffold-master">
+      <paths name="master-k8s">
         <serverdata>
           <mappings>
             <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="vm-master">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="vm-node">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="vm_jenkins">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="vmcampus">
+      <paths name="node1-k8s">
         <serverdata>
           <mappings>
             <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />

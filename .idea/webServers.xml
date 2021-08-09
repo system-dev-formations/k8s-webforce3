@@ -2,36 +2,15 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="67d8692c-cce4-4f1b-8d42-f05560ace48b" name="vm-master">
-        <fileTransfer accessType="SFTP" host="172.81.178.56" port="22" sshConfigId="414767d1-990d-4201-a8d9-e06f549617d5" sshConfig="vm-master">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="576ae0ff-c53f-42f4-beab-a23a20984080" name="vm-node">
-        <fileTransfer accessType="SFTP" host="172.81.181.18" port="22" sshConfigId="7c4b5197-bc56-4ad3-a776-c4f95599f9dc" sshConfig="vm-node">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="1975b193-4082-43e0-ac67-5d2a6d0d8981" name="vm_jenkins">
-        <fileTransfer accessType="SFTP" host="170.75.170.206" port="22" sshConfigId="366a35bb-0ef4-4569-91b9-4c376223f746" sshConfig="vm_jenkins" keyPair="true">
+      <webServer id="f8b1c770-d9f5-4895-9720-95f68891c047" name="master-k8s">
+        <fileTransfer accessType="SFTP" host="170.75.170.206" port="22" sshConfigId="cfc010a9-75c4-43a7-bd65-509bc0281035" sshConfig="master-k8s">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
-      <webServer id="bbb4a9f4-a843-42de-a29f-012940c172d7" name="skaffold-master">
-        <fileTransfer accessType="SFTP" host="170.75.170.145" port="22" sshConfigId="e3e15557-f5aa-4fca-9704-c5466b774f44" sshConfig="skaffold-master">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="c8723942-ef96-4dc7-8857-13645e69f3fc" name="vmcampus">
-        <fileTransfer accessType="SFTP" host="170.75.170.254" port="22" sshConfigId="a992d68f-ed76-49f0-a7a6-53cb6b0d7b59" sshConfig="vmcampus">
+      <webServer id="96c3b9e8-2107-4878-ae81-426542694a3d" name="node1-k8s">
+        <fileTransfer accessType="SFTP" host="170.75.162.14" port="22" sshConfigId="7d8cfe12-1954-4033-9c37-043557991552" sshConfig="node1-k8s">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
