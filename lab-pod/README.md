@@ -12,6 +12,7 @@ kubectl get pod nginx -o yaml > first.yaml
 ### Utilisation de kubectl-neat pour nettoyer les scripts pour qui soient plus lisibles
 Voir https://github.com/itaysk/kubectl-neat
 ```shell
+cd
 sudo apt install -y build-essential
 wget https://github.com/itaysk/kubectl-neat/archive/v2.0.3.tar.gz
 tar -zxvf v2.0.3.tar.gz 

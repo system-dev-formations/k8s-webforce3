@@ -16,6 +16,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="59e6ed90-46c2-4ba5-8ea6-3410437c7714" name="kind-velero">
+        <fileTransfer accessType="SFTP" host="51.68.5.150" port="22" sshConfigId="78a482db-99f3-48d5-aa0a-72cba5cebd54" sshConfig="kind-velero">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
