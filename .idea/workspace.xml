@@ -20,17 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/install-docker/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/install-docker/install_docker_ubuntu.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-kind/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/web.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-cilium/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-cilium/network-policy.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-dashboard/DASHBOARD.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-dashboard/DASHBOARD.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-kompose/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-kompose/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-nfs/PVol.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-nfs/PVol.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-pod/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-pod/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-kind/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-kind/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +243,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added python deployment" />
     <MESSAGE value="added basic01 deployment examples" />
     <MESSAGE value="more changes" />
     <MESSAGE value="added more projects" />
@@ -275,6 +267,7 @@
     <MESSAGE value="added lab-first-step" />
     <MESSAGE value="Change lab-authorization" />
     <MESSAGE value="added more changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more changes" />
+    <MESSAGE value="added kind, velero" />
+    <option name="LAST_COMMIT_MESSAGE" value="added kind, velero" />
   </component>
 </project>

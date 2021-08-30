@@ -21,8 +21,13 @@ cd ~/k8s-webforce3/lab-rollingupdate
 docker run -it --rm --name work -v ${HOME}:/root/ -v ${PWD}:/work -w /work --net host alpine sh 
 
 ## install kubectl 
-apk add --no-cache --virtual .build-deps bash gcc musl-dev openssl go curl vim
+-- apk add --no-cache --virtual .build-deps bash gcc musl-dev openssl go curl vim
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 kubectl version --client
 alias k='kubectl'
+
+## install azure storage
+```shell
+ docker run -it --rm --name azure-cli --entrypoint /bin/sh bitnami/azure-cli:latest
+```
