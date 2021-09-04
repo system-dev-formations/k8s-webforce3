@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="f8b1c770-d9f5-4895-9720-95f68891c047" name="master-k8s">
-        <fileTransfer accessType="SFTP" host="170.75.170.206" port="22" sshConfigId="cfc010a9-75c4-43a7-bd65-509bc0281035" sshConfig="master-k8s">
+        <fileTransfer accessType="SFTP" host="164.132.212.98" port="22" sshConfigId="cfc010a9-75c4-43a7-bd65-509bc0281035" sshConfig="master-k8s">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

@@ -5,7 +5,7 @@
 alias k = 'kubectl'
 source <( kubectl completion bash | sed s/kubectl/k/g)
 ```
-## Set up dashboard
+## Set up the dashboard
 ```shell
 k apply -f recommended.yaml 
 k apply -f dashboard-adminuser.yaml
