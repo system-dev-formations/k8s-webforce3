@@ -23,6 +23,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="5cf9c20c-010b-4ddc-a97e-ae296eb26730" name="kind-istio">
+        <fileTransfer accessType="SFTP" host="172.81.183.116" port="22" sshConfigId="b857e7ed-a2ff-46ff-bb58-8ef180a76efa" sshConfig="kind-istio">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

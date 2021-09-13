@@ -43,3 +43,4 @@ docker push <your docker_hub_account>/todoapplication-postgres
 ```shell
 k create -f todoapplication-deployment.yaml
 k create -f todoapplication-service.yaml
+```
