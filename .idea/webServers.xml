@@ -2,29 +2,36 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="f8b1c770-d9f5-4895-9720-95f68891c047" name="master-k8s">
-        <fileTransfer accessType="SFTP" host="164.132.212.98" port="22" sshConfigId="cfc010a9-75c4-43a7-bd65-509bc0281035" sshConfig="master-k8s">
+      <webServer id="f8b1c770-d9f5-4895-9720-95f68891c047" name="master-latest-k8s">
+        <fileTransfer accessType="SFTP" host="164.132.212.98" port="22" sshConfigId="cfc010a9-75c4-43a7-bd65-509bc0281035" sshConfig="master-latest-k8s">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
-      <webServer id="96c3b9e8-2107-4878-ae81-426542694a3d" name="node1-k8s">
-        <fileTransfer accessType="SFTP" host="170.75.162.14" port="22" sshConfigId="7d8cfe12-1954-4033-9c37-043557991552" sshConfig="node1-k8s">
+      <webServer id="96c3b9e8-2107-4878-ae81-426542694a3d" name="node1-latest-k8s">
+        <fileTransfer accessType="SFTP" host="170.75.162.14" port="22" sshConfigId="7d8cfe12-1954-4033-9c37-043557991552" sshConfig="node1-latest-k8s">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
-      <webServer id="59e6ed90-46c2-4ba5-8ea6-3410437c7714" name="kind-velero">
-        <fileTransfer accessType="SFTP" host="51.68.5.150" port="22" sshConfigId="78a482db-99f3-48d5-aa0a-72cba5cebd54" sshConfig="kind-velero">
+      <webServer id="0764f634-5217-48ee-af6f-2279e516d57a" name="master-sandbox">
+        <fileTransfer accessType="SFTP" host="170.75.170.206" port="22" sshConfigId="88cf2c47-274b-469f-9d50-7a1c02d68c5a" sshConfig="master-sandbox">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
-      <webServer id="5cf9c20c-010b-4ddc-a97e-ae296eb26730" name="kind-istio">
-        <fileTransfer accessType="SFTP" host="172.81.183.116" port="22" sshConfigId="b857e7ed-a2ff-46ff-bb58-8ef180a76efa" sshConfig="kind-istio">
+      <webServer id="5b13ec0b-7a50-430d-9ba0-66722a7ff5a1" name="k8s-master">
+        <fileTransfer accessType="SFTP" host="164.132.212.98" port="22" sshConfigId="cfc010a9-75c4-43a7-bd65-509bc0281035" sshConfig="master-latest-k8s">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="9a538837-cb19-43ff-9f0b-25ff3b5dc803" name="node2-latest-k8s">
+        <fileTransfer accessType="SFTP" host="164.132.182.36" port="22" sshConfigId="d6ad7888-75c6-4d62-9da4-bb9c800a8e91" sshConfig="node2-latest-k8s">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

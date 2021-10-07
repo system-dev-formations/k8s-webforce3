@@ -4,9 +4,7 @@ metadata:
   name: rs-one
 spec:
   replicas: 2
-  selector:
-    matchLabels:
-      system: ReplicaOne
+  k edit
   template:
     metadata:
       name: rs-one

@@ -18,7 +18,7 @@ wget https://github.com/itaysk/kubectl-neat/archive/v2.0.3.tar.gz
 tar -zxvf v2.0.3.tar.gz 
 cd kubectl-neat-2.0.3/
 make
-sudo cp dist/kubectl-neat_linux /usr/local/bin/kubectl-neat
+sudo cp dist/kubectl-neat_linux_amd64 /usr/local/bin/kubectl-neat
 ```
 ## usage avec un pipe et une redirection 
 ```

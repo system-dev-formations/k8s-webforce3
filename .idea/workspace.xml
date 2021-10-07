@@ -23,11 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lab-istio/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-nfs/postgresql-pv.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/low-resource-range.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-flask-postgres/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/todo-flask-postgres/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-first-step/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-first-step/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-nfs/PVol.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-nfs/PVol.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-pod/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-pod/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rs.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/rs.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +109,13 @@
     <property name="RunConfigurationTargetLRU" value="&#10;fb01b22b-9062-4799-892f-825f0a1bb70c/database/&quot;tododb&quot;&#10;ded10d13-5b1a-4eb5-8f8c-60145da7f79b/database/&quot;tododb&quot;&#10;e9cabf21-3846-48aa-9c82-edc5db6e12c0/database/&quot;tododb&quot;&#10;4cfdbc1f-9a73-4a78-beac-e7e7e1ae6988/database/&quot;tododb&quot;" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210911_0000" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211005_0000" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -252,7 +263,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added more projects" />
     <MESSAGE value="added more in using google cloud" />
     <MESSAGE value="Added dashboard and more comments" />
     <MESSAGE value="Fixed lab-metric-server" />
@@ -277,6 +287,7 @@
     <MESSAGE value="added kind, velero" />
     <MESSAGE value="added cilium" />
     <MESSAGE value="added more tools" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more tools" />
+    <MESSAGE value="added istio lab" />
+    <option name="LAST_COMMIT_MESSAGE" value="added istio lab" />
   </component>
 </project>

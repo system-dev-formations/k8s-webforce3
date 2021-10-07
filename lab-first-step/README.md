@@ -63,9 +63,9 @@ k create -f first.yaml
 see https://github.com/itaysk/kubectl-neat
 ```shell
 sudo apt install -y build-essential
-wget https://github.com/itaysk/kubectl-neat/archive/v2.0.2.tar.gz
-tar -zxvf v2.0.2.tar.gz 
-cd kubectl-neat-2.0.2/
+wget https://github.com/itaysk/kubectl-neat/archive/v2.0.3.tar.gz
+tar -zxvf v2.0.3.tar.gz 
+cd kubectl-neat-2.0.3/
 make
 # don't worry about the error in the test-e2e
 sudo cp dist/kubectl-neat_linux /usr/local/bin/kubectl-neat

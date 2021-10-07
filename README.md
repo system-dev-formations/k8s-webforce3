@@ -44,7 +44,7 @@
 ```
 ## CPU and Limits
 ```shell script
-  kubectl create deployment hog --image vish/lab-stress
+  kubectl create deployment hog --image systemdevformations/stress
    k get deployment hog
   k describe deployment hog
    kubectl get deployment hog --export -o yaml > hog.yaml
