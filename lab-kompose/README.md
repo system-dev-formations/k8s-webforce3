@@ -20,7 +20,7 @@ sudo mv ./kompose /usr/local/bin/kompose
 ## Convertir un projet qui contient  un docker compose
 ```shell
 cd
-git clone https://github.com/<repo_perso>/todo-flask-postgresql.git
+git clone https://github.com/<repo_perso>/todo-flask-postgres.git
 cd todo-flask-postgresql
 mkdir k8s
 cd k8s

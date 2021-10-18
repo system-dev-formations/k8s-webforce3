@@ -1,39 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="master-latest-k8s">
+  <component name="PublishConfigData" serverName="master">
     <serverData>
-      <paths name="k8s-master">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="master-latest-k8s">
+      <paths name="master">
         <serverdata>
           <mappings>
             <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="master-sandbox">
+      <paths name="node">
         <serverdata>
           <mappings>
             <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="node1-latest-k8s">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="node2-latest-k8s">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

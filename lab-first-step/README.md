@@ -68,11 +68,11 @@ tar -zxvf v2.0.3.tar.gz
 cd kubectl-neat-2.0.3/
 make
 # don't worry about the error in the test-e2e
-sudo cp dist/kubectl-neat_linux /usr/local/bin/kubectl-neat
+sudo cp dist/kubectl-neat_linux_amd64 /usr/local/bin/kubectl-neat
 ```
 ## Use a linux pipe and redirection
 ```shell
-k get deployment nginx -o yaml | kubectl-neat  > first.yaml
+k get deployment nginx -o yaml | kubectl-neat  > second.yaml
 ```
 ## Usage of dry-run 
 ```shell
