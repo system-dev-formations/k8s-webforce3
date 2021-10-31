@@ -1,9 +1,9 @@
 # Installer Helm
 ##Installation de binaire helm
 ```shell script
-wget https://github.com/helm/helm/archive/refs/tags/v3.6.3.tar.gz
-tar -zxvf v3.6.3.tar.gz
-cd helm-3.6.3/
+wget https://github.com/helm/helm/archive/refs/tags/v3.7.1.tar.gz
+tar -zxvf v3.7.1.tar.gz
+cd helm-3.7.1/
 make
 cd bin
 sudo cp  helm /usr/local/bin/helm
@@ -16,8 +16,8 @@ helm version
 ## ajouter un repo et installer mysql chart
 ```shell script
     helm repo add bitnami https://charts.bitnami.com/bitnami
-    helm repo add stable https://charts.helm.sh/stable
-    helm search repo stable
+    
+    helm search repo bitnami
     helm repo update
     k create -f mysqldb-hostpath.yaml
     k get pv
@@ -30,7 +30,7 @@ helm version
 ```
 ## Get mysql admin password
 ```shell script
-   MYSQL_ROOT_PASSWORD=$(kubectl get secret --namespace default mysql -o jsonpath="{.data.mysql-root-password}" | base64 --decode; echo)
+   MYSQL_ROOT_PASSWORD=$(kubectl get secret --namespace default mysql-stable -o jsonpath="{.data.mysql-root-password}" | base64 --decode; echo)
    echo $MYSQL_ROOT_PASSWORD
 ```
 ## se connecter a Mysql en dehors du cluster 
@@ -43,3 +43,9 @@ helm version
 
 # Troubleshooting if helm failed 
 alias helm='docker run -e KUBECONFIG="/root/.kube/config:/root/.kube/some-other-context.yaml" -ti --rm -v $(pwd):/apps -v ~/.kube:/root/.kube -v ~/.helm:/root/.helm alpine/helm'
+
+## Add prometheus
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+
+
+

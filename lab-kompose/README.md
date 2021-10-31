@@ -1,8 +1,8 @@
 # lab-kompose
 Kompose est un outil de conversion de docker-compose vers Kubernetes.
 
-## install Kompose a partir des sources
-```shell
+## install Kompose a partir des sources cd
+```shell 
 wget https://github.com/kubernetes/kompose/archive/refs/tags/v1.23.0.tar.gz
 tar -zxvf v1.23.0.tar.gz
 cd kompose-1.23.0/

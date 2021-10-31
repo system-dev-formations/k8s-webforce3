@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pvvol-2
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy:  Retain
+  nfs:
+    path: /opt/prom
+    server: 51.254.227.45
+    readOnly: false

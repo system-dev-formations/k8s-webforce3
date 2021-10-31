@@ -86,11 +86,11 @@ the output.
 ```shell
 k expose -h
 k expose deploy nginx
-# open file first yaml and and port and protocol
+# open file second yaml and and port and protocol
 ```
 Due to how the object was created we will need to use replace to terminate and create a new deployment.
 ```shell
-k replace -f first.yaml
+k replace -f second.yaml
 ```
 
 Try to expose the resource again. This time it should work.

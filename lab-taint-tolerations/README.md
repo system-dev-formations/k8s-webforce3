@@ -68,9 +68,9 @@ k uncordon k8s-teacher-node-1
 ```shell
 docker ps | wc -l 
 k get nodes 
-k label nodes k8s-teacher-master status=vip
+k label nodes teacher-node1 status=vip
 k get nodes --show-labels
-k label nodes k8s-teacher-node-1 status=other
+k label nodes teacher-node2 status=other
 k get nodes --show-labels
 k create -f vip.yaml
 docker ps | wc -l

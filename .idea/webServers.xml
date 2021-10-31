@@ -2,15 +2,29 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="5e72260f-ae7d-4be9-94fb-4c0b5b134d9b" name="master">
-        <fileTransfer accessType="SFTP" host="51.254.227.45" port="22" sshConfigId="3d4c9a55-cd8d-436d-bff7-3efe6c84f477" sshConfig="master">
+      <webServer id="a37b9432-12ba-40a1-8a4d-ad2c11e9e4fb" name="master">
+        <fileTransfer accessType="SFTP" host="137.74.107.169" port="22" sshConfigId="3d4c9a55-cd8d-436d-bff7-3efe6c84f477" sshConfig="master">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
-      <webServer id="7810a0df-ff0b-4a40-b0a3-1681543527ad" name="node">
-        <fileTransfer accessType="SFTP" host="137.74.61.114" port="22" sshConfigId="dfaf4fde-2a29-4008-aacc-c2719b5f76b8" sshConfig="node">
+      <webServer id="fcfff794-b41f-44db-a15e-84679c5b1484" name="node1">
+        <fileTransfer accessType="SFTP" host="51.68.5.230" port="22" sshConfigId="dfaf4fde-2a29-4008-aacc-c2719b5f76b8" sshConfig="node1">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="0683256d-0096-4e98-a5d5-304cd4b1605f" name="node2">
+        <fileTransfer accessType="SFTP" host="51.68.5.230" port="22" sshConfigId="dfaf4fde-2a29-4008-aacc-c2719b5f76b8" sshConfig="node1">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="28d00400-34ba-4cda-a711-3f8a6ceaaa4c" name="kind">
+        <fileTransfer accessType="SFTP" host="51.68.5.192" port="22" sshConfigId="750e6c2d-af31-47c1-8c01-d6b94ab7bf00" sshConfig="kind">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
