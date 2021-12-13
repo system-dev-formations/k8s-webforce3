@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="master">
+  <component name="PublishConfigData" serverName="kind">
     <serverData>
       <paths name="kind">
         <serverdata>
@@ -16,17 +16,10 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="node1">
+      <paths name="node">
         <serverdata>
           <mappings>
             <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="node2">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

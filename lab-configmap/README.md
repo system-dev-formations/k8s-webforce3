@@ -34,4 +34,5 @@ k create -f simpleshell-1.yaml
 k exec -it shell-demo -- /bin/bash -c 'df -ha | grep car'
 k exec -it shell-demo -- /bin/bash -c 'cat /etc/cars/car.body'
 k exec -it shell-demo -- /bin/bash -c 'cat /etc/cars/car.model'
-```k exec -it shell-demo -- /bin/bash -c 'cat /etc/cars/car.body'
+k exec -it shell-demo -- /bin/bash -c 'cat /etc/cars/car.make'
+```

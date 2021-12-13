@@ -26,7 +26,7 @@ spec:
         app: hog
     spec:
       containers:
-      - image: vish/stress
+      - image: systemdevformations/stress
         imagePullPolicy: Always
         name: stress
         resources:
@@ -35,16 +35,16 @@ spec:
             memory: "4Gi"
           requests:
             cpu: "0.5"
-            memory: "2500Mi"
+            memory: "500Mi"
         args:
-        - -cpus
-        - "2"
-        - -mem-total
-        - "950Mi"
-        - -mem-alloc-size
-        - "100Mi"
-        - -mem-alloc-sleep
-        - "1s"
+          - -cpus
+          - "2"
+          - -mem-total
+          - "950Mi"
+          - -mem-alloc-size
+          - "100Mi"
+          - -mem-alloc-sleep
+          - "1s"
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst

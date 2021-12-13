@@ -37,3 +37,8 @@ kubectl port-forward service/webapp-service 3500:8080 --address='0.0.0.0'
 chmod +x curl-test.sh
 /curl-test.sh
 ```
+
+## delete cluster 
+```shell
+kind delete cluster --name kube
+```

@@ -58,6 +58,7 @@ k delete -f taint.yaml
 k taint nodes k8s-teacher-node-1 bubba-
 
 ## drain 
+k create -f taint.yaml
 k drain k8s-teacher-node-1
 k get nodes
 

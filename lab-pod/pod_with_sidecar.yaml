@@ -13,7 +13,7 @@
 # Once the pod is running:
 #
 #   (Connect to the sidecar pod)
-#   kubectl exec pod-with-sidecar -c sidecar-container -it bash
+#   kubectl exec -it  pod-with-sidecar -c sidecar-container -- bash
 #
 #   (Install curl on the sidecar)
 #   apt-get update && apt-get install curl
