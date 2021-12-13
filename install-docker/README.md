@@ -20,7 +20,7 @@ pip3 install wheel  # set for permissions purpose
 pip3 install ansible # install ansible 
 pip3 install requests # extra packages
 ansible --version # check the version number # should be the latest 2.11.4
-ansible-playbook -i inventory install_docker_ubuntu.yml   # run the playbook for installing docker
+ansible-playbook -i inventory_kind install_docker_ubuntu.yml   # run the playbook for installing docker
 # close your IDE and start again 
 cd
 docker ps 

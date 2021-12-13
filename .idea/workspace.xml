@@ -23,27 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="460d2d5b-ee8c-4a9d-b1f2-b9dc8cc735c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/argocd-helloworld/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/argocd-helloworld/apps.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/argocd-helloworld/exports" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/argocd-helloworld/preview.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/argocd-helloworld/project.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s-kompose/mypostgres-pv.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s-kompose/mypostgres-pvc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s-kompose/sql/todos.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s-voting-app/mypostgres-pv.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s-voting-app/mypostgres-pvc.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-kind/install_docker_ubuntu.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab-kind/inventory_kind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/argocd/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/argocd/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-configmap/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-configmap/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install-docker/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/install-docker/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-kind/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-kind/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-pod/pod_with_sidecar.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-pod/pod_with_sidecar.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-rollingupdate/curl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-rollingupdate/curl.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-stress/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-stress/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-stress/hog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-stress/hog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-taint-tolerations/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-taint-tolerations/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +110,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20211213_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211213_0001" />
     <property name="configurable..is.expanded" value="false" />
     <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
@@ -156,11 +141,11 @@
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\k8s-convert-todo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\lab-kind" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\lab-stress" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\todo-flask-initcontainers\flask" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\todo-flask-sqlite-monolith" />
       <recent name="D:\crunchydevops\kubernetes\k8s-webforce3\lab-dashboard" />
-      <recent name="D:\crunchydevops\kubernetes\k8s-webforce3" />
     </key>
   </component>
   <component name="RemoteSynchronizer">
@@ -269,7 +254,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added lab nfs and confimap" />
     <MESSAGE value="added dashboard" />
     <MESSAGE value="added more lab" />
     <MESSAGE value="added and checked many labs" />
@@ -294,6 +278,7 @@
     <MESSAGE value="More comments and kompose definition" />
     <MESSAGE value="added minor changes" />
     <MESSAGE value="added config file for kind install" />
-    <option name="LAST_COMMIT_MESSAGE" value="added config file for kind install" />
+    <MESSAGE value="Last change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last change" />
   </component>
 </project>

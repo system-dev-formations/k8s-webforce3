@@ -131,7 +131,6 @@ venv.bak/
 
 # Ansible
 .retry
-inventory
 
 # OS X
 .DS_Store
@@ -145,7 +144,7 @@ inventory
 
 # Shared objects (inc. Windows DLLs)
 *.dll
-*.so
+
 *.so.*
 *.dylib
 
