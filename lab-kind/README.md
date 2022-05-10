@@ -38,6 +38,7 @@ kind version  # Check
 Check on docker hub to get a valid image version   
 ```shell
 kind create cluster --name=kube --config kind-config.yml --image kindest/node:v1.22.2
+# kind create cluster --name=kube --config kind-config.yml --image kindest/node:v1.18.19
 ```
 Note: after running kind a directory .kube has been created
 

@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: a-failling-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: a-failling-job
+          image: bash
+          command: ["bash", "-c", "sleep 1; exit 1"]
+      restartPolicy: Never
+  backoffLimit: 3
+
+

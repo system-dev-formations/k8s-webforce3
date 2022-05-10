@@ -2,24 +2,10 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="b1831475-46bf-49e6-90ea-580b7b116eff" name="kind">
-        <fileTransfer accessType="SFTP" host="51.68.5.192" port="22" sshConfigId="14f5e5af-19cf-4dec-862d-e8e59d3caca4" sshConfig="kind">
+      <webServer id="9db9755b-8c45-440b-abc0-0bb9747b4326" name="prometheus">
+        <fileTransfer accessType="SFTP" host="137.74.107.170" port="22" sshConfigId="1c1601ea-aa94-4c17-a3a6-1fdfa7004c3e" sshConfig="prometheus">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="30000" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="d088d850-2a7c-4ed1-bbfd-366eb94ede2a" name="master">
-        <fileTransfer accessType="SFTP" host="164.132.212.121" port="22" sshConfigId="af2c51a8-58cb-43e7-9844-b11c3a548990" sshConfig="master">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="30000" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="cbdb1cb9-ed10-45a1-bf76-516c2a85f675" name="node">
-        <fileTransfer accessType="SFTP" host="51.255.211.165" port="22" sshConfigId="5c97a5f3-944f-4185-a9e1-80f0344576e6" sshConfig="node">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="30000" passiveMode="true" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>

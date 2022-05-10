@@ -6,6 +6,6 @@ metadata:
 spec:
   containers:
   - name: webcont
-    image: nginx
+    image: test
     ports:
     - containerPort: 80

@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="kind">
+  <component name="PublishConfigData" serverName="prometheus">
     <serverData>
-      <paths name="kind">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="master">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="node">
+      <paths name="prometheus">
         <serverdata>
           <mappings>
             <mapping deploy="/home/ubuntu/k8s-webforce3" local="$PROJECT_DIR$" web="/" />

@@ -107,6 +107,7 @@ k scale deploy nginx --replicas=3  # scale up to 3 web servers
 k delete pod <pod_name>  # delete a pod and see what's happen
 k get ep nginx
 k scale deploy nginx --replicas=0  # stop all pods
+k scale deploy nginx --replicas=1  # stop all pods
 ```
 
 ## Access from the outside world
