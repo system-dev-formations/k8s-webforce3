@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="9db9755b-8c45-440b-abc0-0bb9747b4326" name="prometheus">
-        <fileTransfer accessType="SFTP" host="137.74.107.170" port="22" sshConfigId="1c1601ea-aa94-4c17-a3a6-1fdfa7004c3e" sshConfig="prometheus">
+      <webServer id="13bec115-b841-40f5-ba0e-d3c79e658e7b" name="kind">
+        <fileTransfer accessType="SFTP" host="51.68.5.172" port="22" sshConfigId="20d93ab8-aef0-4264-a1c4-aaa3b53ea390" sshConfig="kind">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

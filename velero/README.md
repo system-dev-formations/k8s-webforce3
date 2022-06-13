@@ -4,9 +4,9 @@ cd lan-kind
 kind create cluster --name velero --config kind-config.yml --image kindest/node:v1.17.11
 
 ```shell script
-wget https://github.com/vmware-tanzu/velero/archive/v1.7.1.tar.gz
-tar -zxvf v1.7.1.tar.gz
-cd velero-1.7.1/
+wget https://github.com/vmware-tanzu/velero/archive/v1.8.1.tar.gz
+tar -zxvf v1.8.1.tar.gz
+cd velero-1.8.1/
 go build ./cmd/velero
 sudo mv velero /usr/local/bin
 ```

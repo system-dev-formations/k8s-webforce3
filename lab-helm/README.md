@@ -1,8 +1,8 @@
 # Installer Helm
 ##Installation de binaire helm
 ```shell script
-wget https://github.com/helm/helm/archive/refs/tags/v3.7.1.tar.gz
-tar -zxvf v3.7.1.tar.gz
+wget https://github.com/helm/helm/archive/refs/tags/v3.9.0.tar.gz
+tar -zxvf v3.9.0.tar.gz
 cd helm-3.7.1/
 make
 cd bin

@@ -13,6 +13,7 @@ Crtl-c  # exit
 ``` 
 ### install docker
 ```shell script
+git clone https://github.com/system-dev-formations/k8s-webforce3.git
 cd k8s-webforce3/lab-kind
 python3 -m venv venv  # set up the module venv in the directory venv
 source venv/bin/activate  # activate the virtualenv python
@@ -20,7 +21,7 @@ pip3 install wheel  # set for permissions purpose
 pip3 install --upgrade pip # update pip3
 pip3 install ansible # install ansible 
 pip3 install requests # extra packages
-ansible --version # check the version number # should be the latest 2.12.1
+ansible --version # check the version number # should be the latest 2.12.6
 ansible-playbook -i inventory_kind install_docker_ubuntu.yml --limit local  # run the playbook for installing docker
 # close your IDE and start again 
 cd k8s-webforce3/lab-kind
@@ -29,7 +30,7 @@ docker ps
 ```
 
 ```shell
-curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64
+curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.14.0/kind-linux-amd64
 chmod +x ./kind   # set kind as an executable
 sudo mv ./kind /usr/local/bin/kind # move kind to a suitable directory 
 kind version  # Check
@@ -37,10 +38,10 @@ kind version  # Check
 ## Start a cluster with kubernetes image version 
 Check on docker hub to get a valid image version   
 ```shell
-kind create cluster --name=kube --config kind-config.yml --image kindest/node:v1.22.2
+kind create cluster --name=kube --config kind-config.yml --image kindest/node:v1.24.1
 # kind create cluster --name=kube --config kind-config.yml --image kindest/node:v1.18.19
 ```
-Note: after running kind a directory .kube has been created
+Note: after running kind a directory .kube is created
 
 
 ## Create a container as a working environment
