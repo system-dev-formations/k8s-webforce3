@@ -1,6 +1,6 @@
  # Velero
  Backup and restore of kubernetes objects.
-cd lan-kind
+cd lab-kind
 kind create cluster --name velero --config kind-config.yml --image kindest/node:v1.17.11
 
 ```shell script
