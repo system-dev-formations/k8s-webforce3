@@ -1,14 +1,16 @@
 # k8s-webforce3
 
+Go to kubespray directory
+
 ## Check
 ```shell script
-  kubectl get nodes
-  kubectl get node
-  kubectl get node -o wide
+  k get nodes
+  k get node
+  k get node -o wide
 
 ## Deployment example
-  kubectl create deployment nginx --image=nginx
-  kubectl get deployments
+  k create deployment nginx --image=nginx
+  k get deployments
   kubectl describe deployment nginx
   kubectl get events
   kubectl get deployment nginx -o yaml 
@@ -39,12 +41,11 @@
   kubectl expose deployment nginx --type=LoadBalancer
   kubectl get svc
   k get svc -A
-  # if there is an issue use a ssh tunnel
-  ssh -L 12000:51.68.5.225:30000 etudiant@localhost 
+ 
 ```
 ## CPU and Limits
 ```shell script
-  kubectl create deployment hog --image systemdevformations/stress
+  k create deployment hog --image systemdevformations/stress
    k get deployment hog
   k describe deployment hog
    kubectl get deployment hog --export -o yaml > hog.yaml

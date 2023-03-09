@@ -24,7 +24,7 @@ python3 -m venv venv  # set up the module venv in the directory venv
 source venv/bin/activate  # activate the virtualenv python
 ```
 
-##  Installation wt creation de l'inventory 
+##  Installation et creation de l'inventory 
 ```shell
 pip3 install -r requirements.txt 
 # Copy ``inventory/sample`` as ``inventory/mycluster``
@@ -41,10 +41,16 @@ ansible-playbook -i inventory/mycluster/hosts.yaml  --become --become-user=root 
 ## Extra
 Go to the master node  
 ```shell
-sudo chown -R ubuntu:ubuntu .kube
-sudo chown -R ubuntu:ubuntu kubectl 
-chmod +x kubectl 
-sudo cp kubectl /usr/local/bin
-alias k='kubectl'
-k get nodes
+sudo chown -R ubuntu:ubuntu .kube   # Changing owner of .kube directory
+sudo chown -R ubuntu:ubuntu kubectl  # Changing owner of kubectl
+chmod +x kubectl    # set kubectl as an executable
+sudo cp kubectl /usr/local/bin  # copy to the relevant path within the $PATH
+alias k='kubectl'  # alias 
+alias ll='ls -alrt'
+source <( kubectl completion bash | sed s/kubectl/k/g )
+k get nodes   # Check
 ```
+
+
+## Production Architecture 
+![prod](../screenshot/architecture_prod.png)
